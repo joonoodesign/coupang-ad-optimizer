@@ -1,0 +1,24 @@
+{
+  "name": "주누디자인 쿠팡 윙 상품·광고 최적화 센터",
+  "short_name": "쿠팡광고최적화",
+  "description": "주누디자인 쿠팡 윙(Wing) 전 상품 SEO·키워드 태그·ROAS 입찰가 최적화 및 전화/계좌입금 통합 성과 대시보드",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b1120",
+  "theme_color": "#e62e2d",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='42' fill='%23e62e2d'/%3E%3Ctext x='96' y='128' font-family='Arial,sans-serif' font-size='104' font-weight='900' fill='%23ffffff' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='110' fill='%23e62e2d'/%3E%3Ctext x='256' y='345' font-family='Arial,sans-serif' font-size='280' font-weight='900' fill='%23ffffff' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

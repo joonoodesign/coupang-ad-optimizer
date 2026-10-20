@@ -1,0 +1,33 @@
+{
+  "baselineDate": "2026-10-20",
+  "vendorId": "A00191094",
+  "vendorName": "주누디자인 (이정민)",
+  "threeMonthSales": 7215200,
+  "settlementUpcoming": 381460,
+  "periodLabel": "2026.10.13 ~ 2026.10.19 (최근 7일)",
+  "totalCost": 224128,
+  "adSales": 586800,
+  "totalStoreSales": 964200,
+  "totalStoreUnits": 776,
+  "impressions": 384545,
+  "clicks": 1567,
+  "ctr": 0.41,
+  "avgCpc": 143,
+  "onlineRoas": 261.81,
+  "activeManualGroups": 8,
+  "totalManualGroups": 9,
+  "shortNameProductsCount": 7,
+  "phoneSmartBidAvg": 267,
+  "productsBefore": [
+    { "id": "748490137", "oldName": "명함", "units30d": 1312, "price": 1000, "shipping": 3000 },
+    { "id": "738722850", "oldName": "무료디자인 스티커 주문제작 소량스티커 유포지 투명 도무송 인쇄 사각 원형 맞춤 초강접제작", "units30d": 824, "price": 1000, "shipping": 3000 },
+    { "id": "13537783108", "oldName": "빌지 영수증", "units30d": 404, "price": 1000, "shipping": 4000 },
+    { "id": "907344096", "oldName": "홍보 인쇄물 맞춤제작 전단지 종이자석 봉투 배너 디자인 인쇄소", "units30d": 90, "price": 1000, "shipping": 4000 },
+    { "id": "11905267494", "oldName": "리뷰스티커 주누디자인", "units30d": 23, "price": 9200, "shipping": 3000 },
+    { "id": "11917122413", "oldName": "서비스스티커 주누디자인", "units30d": 20, "price": 9200, "shipping": 3000 },
+    { "id": "12350470478", "oldName": "취급주의 1000매 주누디자인", "units30d": 12, "price": 9500, "shipping": 3000 },
+    { "id": "16360123820", "oldName": "맞춤 실사출력 시트지 인쇄 주문제작 (유포지 합성지 PVC켈지 그레이 실내외용)", "units30d": 1, "price": 1000, "shipping": 3000 },
+    { "id": "15280821833", "oldName": "리플렛 팜플렛 디자인 인쇄 주누디자인", "units30d": 1, "price": 1000, "shipping": 4000 },
+    { "id": "15280825938", "oldName": "카다로그 카달로그 카탈로그 디자인 인쇄 주누디자인", "units30d": 0, "price": 1000, "shipping": 4000 }
+  ]
+}

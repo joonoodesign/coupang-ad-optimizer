@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>주누디자인 쿠팡(쿠팡 윙) 상품·광고 최적화 센터</title>
+  <meta name="description" content="주누디자인 쿠팡 윙 전 상품 SEO·검색어 태그·ROAS 입찰가 최적화 및 전화/계좌입금 통합 성과 비교 대시보드" />
+  <meta name="theme-color" content="#e62e2d" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="쿠팡광고최적화" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='42' fill='%23e62e2d'/%3E%3Ctext x='96' y='128' font-family='Arial,sans-serif' font-size='104' font-weight='900' fill='%23ffffff' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-container">
+    <!-- 상단 헤더 -->
+    <header class="top-header">
+      <div class="brand-group">
+        <div class="brand-logo">C</div>
+        <div class="brand-title">
+          <h1>
+            주누디자인 쿠팡(Wing) 상품·광고 최적화 센터
+            <span class="account-pill" id="accountBadge">업체코드: A00191094 (이정민 / 주누디자인)</span>
+          </h1>
+          <p class="brand-subtitle">전 상품(10종) 광고 누락 점검 · 쿠팡 SEO 상품명/검색어 태그 20개 · 전화상담(계좌입금)+온라인결제 2-Track ROAS 최적화</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <div class="sync-badge" id="openSyncModalBtn" title="클라우드 실시간 동기화 설정">
+          <span class="sync-dot" id="syncDot"></span>
+          <span id="syncStatusText">클라우드 동기화 확인 중...</span>
+        </div>
+        <button class="btn btn-primary" id="syncNowBtn">🔄 클라우드 최신 동기화</button>
+        <label class="btn" for="csvUploadInput" style="cursor:pointer;">📂 쿠팡 보고서(CSV/엑셀) 업로드</label>
+        <input type="file" id="csvUploadInput" accept=".csv,.tsv,.txt,.xls,.xlsx" style="display:none;" />
+        <button class="btn" id="openTutorialBtn">❓ 사용법</button>
+        <button class="btn" id="themeToggleBtn" title="다크/라이트 모드 전환">🌙 테마</button>
+      </div>
+    </header>
+
+    <!-- 핵심 진단 배너 -->
+    <section class="api-status-banner" id="statusBanner">
+      <div class="api-banner-left">
+        <span class="api-banner-icon">🚀</span>
+        <div class="api-banner-text" id="bannerMessage">
+          <strong>[주누디자인 A00191094]</strong> 판매중 <strong>전체 10개 상품(아이템위너 100%)</strong> 및 <strong>4개 광고 캠페인(9개 광고그룹)</strong> 정밀 진단 완료!
+          판매량 2위 <code>스티커제작</code> 수동 광고그룹 중지(OFF) 복구, <code>서비스스티커</code> 수동 광고 편입, 전화상담 주력 4종(빌지·시트지·리플렛·카달로그) 스마트타겟팅 CPC 거품 제거 및 전 상품 SEO 상품명·검색어 20개가 준비되었습니다.
+        </div>
+      </div>
+      <div class="api-banner-controls">
+        <a class="btn btn-sm" href="https://wing.coupang.com/vendor-inventory/list" target="_blank" rel="noopener">🔗 쿠팡 윙 상품관리 열기</a>
+        <a class="btn btn-primary btn-sm" href="https://advertising.coupang.com/marketing/dashboard/sales" target="_blank" rel="noopener">🎯 쿠팡 광고센터 열기</a>
+      </div>
+    </section>
+
+    <!-- 마진율 & 목표 컨트롤 바 -->
+    <section class="control-bar">
+      <div class="control-group">
+        <div class="control-item">
+          <label for="marginRateInput">💰 평균 마진율(%)</label>
+          <input type="number" id="marginRateInput" min="5" max="95" step="1" value="50" style="width:74px;" />
+          <span class="bep-pill" id="bepRoasText">손익분기 ROAS: 200%</span>
+        </div>
+        <div class="control-item">
+          <label for="targetRoasInput">🎯 목표 통합 ROAS(%)</label>
+          <input type="number" id="targetRoasInput" min="100" max="2000" step="10" value="350" style="width:84px;" />
+        </div>
+        <div class="control-item">
+          <label for="targetPhoneCpcInput">📞 전화상담형 적정 CPC(원)</label>
+          <input type="number" id="targetPhoneCpcInput" min="50" max="1000" step="10" value="150" style="width:84px;" />
+        </div>
+      </div>
+      <div class="control-group">
+        <span style="font-size:0.8rem;color:var(--text-sub);" id="lastUpdatedLabel">데이터 기준: 2026-10-20 실시간 연동</span>
+        <button class="btn btn-good btn-sm" id="quickAddPhoneOrderBtn">📞 전화/계좌입금 매출 기록</button>
+      </div>
+    </section>
+
+    <!-- 2026-10-20 기준일 대비 전·후(Before & After) 효율 비교 보드 -->
+    <section class="card" id="baselineComparisonCard" style="border:1px solid rgba(230, 46, 45, 0.45);background:linear-gradient(135deg, rgba(230,46,45,0.09) 0%, rgba(59,130,246,0.07) 100%);margin-bottom:16px;padding:16px 20px;">
+      <div class="card-header" style="margin-bottom:10px;">
+        <div>
+          <div class="card-title">📅 2026-10-20 (최적화 기준일) 대비 전·후(Before & After) 효율 변화 비교 보드</div>
+          <div class="card-desc">기준일(2026-10-20) 초기 상태와 최적화 적용 후 상태를 실시간 비교합니다. (온라인 결제 매출 + 전화상담/계좌입금 매출 통합 반영)</div>
+        </div>
+        <span class="badge badge-good" id="baselineStatusBadge">✅ 전 상품 10종 & 9개 광고그룹 최적화 설계 완료</span>
+      </div>
+      <div id="baselineCompareGrid" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(215px, 1fr));gap:10px;"></div>
+    </section>
+
+    <!-- 6대 핵심 KPI 요약 카드 -->
+    <section class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-label"><span>최근 7일 집행 광고비</span><span>💸</span></div>
+        <div class="kpi-value" id="kpiTotalCost">224,128원</div>
+        <div class="kpi-sub" id="kpiCostSub">오늘 누적 15,059원 (일예산 합 75,000원)</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label"><span>쿠팡 광고 전환 매출</span><span>🛒</span></div>
+        <div class="kpi-value" id="kpiAdSales">586,800원</div>
+        <div class="kpi-sub good" id="kpiAdSalesSub">쿠팡 전체 매출: 964,200원 (776개)</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label"><span>전화상담 + 계좌입금 매출</span><span>📞</span></div>
+        <div class="kpi-value" id="kpiPhoneSales">0원</div>
+        <div class="kpi-sub" id="kpiPhoneSalesSub">빌지·시트지·리플렛·카달로그 상담건</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label"><span>통합 실질 ROAS</span><span>🎯</span></div>
+        <div class="kpi-value" id="kpiTotalRoas">261.8%</div>
+        <div class="kpi-sub good" id="kpiRoasSub">온라인 ROAS 261.8% + 계좌입금 합산</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label"><span>평균 클릭비용 (CPC)</span><span>🖱️</span></div>
+        <div class="kpi-value" id="kpiAvgCpc">143원</div>
+        <div class="kpi-sub" id="kpiClicksSub">총 클릭수 1,567회 (노출 384,545회)</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label"><span>전체 상품 광고 가동률</span><span>📦</span></div>
+        <div class="kpi-value" id="kpiProductCoverage">10 / 10개</div>
+        <div class="kpi-sub warn" id="kpiCoverageSub">수동광고 누락/중지 2건 복구 대상</div>
+      </div>
+    </section>
+
+    <!-- 메인 5개 탭 버튼 -->
+    <nav class="main-tabs">
+      <button class="tab-btn active" data-tab="tab-dashboard">
+        📊 전·후 비교 & 종합 대시보드
+      </button>
+      <button class="tab-btn" data-tab="tab-products">
+        📦 전체 10개 상품 & SEO·검색어 최적화 <span class="tab-count" id="productCountBadge">10</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-campaigns">
+        🎯 캠페인·광고그룹 입찰가(ROAS) & 제외키워드 <span class="tab-count" id="groupCountBadge">9</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-phone-orders">
+        📞 전화상담·계좌입금 매출 기록부 <span class="tab-count" id="phoneOrderCountBadge">0</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-settings">
+        ⚙️ 오전 9시 자동보고 & 클라우드 동기화
+      </button>
+    </nav>
+
+    <!-- 탭 1: 전·후 비교 & 종합 대시보드 -->
+    <main class="tab-pane active" id="tab-dashboard">
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">📈 최근 7일 일자별 광고비 vs 전환매출 & ROAS 추이</div>
+              <div class="card-desc">초록 막대: 전환매출액 / 빨간 막대: 집행 광고비 / 파란 선: 통합 ROAS(%)</div>
+            </div>
+          </div>
+          <div class="chart-container">
+            <canvas id="trendChartCanvas"></canvas>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">🩺 주누디자인 쿠팡 2-Track 광고 효율 핵심 진단</div>
+              <div class="card-desc">쿠팡 윙 10개 전체 상품 및 4개 캠페인 전수 조사 결과</div>
+            </div>
+          </div>
+          <div class="health-score-box">
+            <div class="score-circle" id="healthScoreCircle">
+              <strong id="healthScoreValue">86</strong>
+              <span>최적화 점수</span>
+            </div>
+            <div>
+              <div style="font-weight:800;font-size:0.98rem;margin-bottom:4px;" id="healthScoreTitle">
+                수동광고 누락 2종 복구 + 상품명 SEO 개편 시 ROAS +95%p 상승 기대!
+              </div>
+              <div style="font-size:0.82rem;color:var(--text-sub);" id="healthScoreSummary">
+                3개월 누적 매출 7,215,200원 / 아이템위너 100% 달성 중! 짧은 상품명(명함, 빌지 영수증 등)과 중지된 스티커제작 광고그룹만 바로잡아도 매출이 즉시 확대됩니다.
+              </div>
+            </div>
+          </div>
+          <div class="insight-list" id="dashboardInsightList"></div>
+        </div>
+      </div>
+
+      <!-- Track A vs Track B 비교 카드 -->
+      <div class="grid-equal">
+        <div class="card" style="border-top:4px solid var(--accent);">
+          <div class="card-header">
+            <div>
+              <div class="card-title">📞 [Track A] 전화상담 + 계좌입금 주력 인쇄물 (4종)</div>
+              <div class="card-desc">빌지/영수증 · 맞춤 실사출력 시트지 · 리플렛/팜플렛 · 카다로그</div>
+            </div>
+            <span class="badge badge-info">노출·클릭 유입 극대화 & CPC 방어</span>
+          </div>
+          <p style="font-size:0.84rem;color:var(--text-sub);margin-bottom:12px;">
+            쿠팡에서는 <strong>1,000원(상담전용 기준단가)</strong>으로 등록되어 있어 고객이 쿠팡 상세페이지의 전화번호/문의로 상담 후 <strong>계좌입금(건당 5만~150만 원)</strong>으로 결제하는 비중이 높습니다. 온라인 결제 ROAS만 보고 광고를 끄면 고액 계좌입금 주문이 끊기므로, <strong>스마트타겟팅 CPC 상한을 200~300원 ➔ 150~180원으로 낮춰 적은 비용으로 최대 문의 클릭</strong>을 확보합니다.
+          </p>
+          <div id="trackASummaryBox"></div>
+        </div>
+
+        <div class="card" style="border-top:4px solid var(--good);">
+          <div class="card-header">
+            <div>
+              <div class="card-title">🛒 [Track B] 온라인 즉시결제 + 상담 병행 인쇄물 (6종)</div>
+              <div class="card-desc">명함 · 스티커 · 전단지 · 리뷰스티커 · 서비스스티커 · 취급주의스티커</div>
+            </div>
+            <span class="badge badge-good">즉시결제 전환 & ROAS 극대화</span>
+          </div>
+          <p style="font-size:0.84rem;color:var(--text-sub);margin-bottom:12px;">
+            쿠팡 장바구니 즉시결제가 활발히 일어나는 효자 상품군입니다. 특히 <strong>리뷰스티커(9,200원~), 서비스스티커(9,200원~), 취급주의스티커(9,500원~)</strong>는 1건 결제 시 객단가가 12,000원 이상이며, <strong>명함(월 1,312개)·스티커(월 824개)</strong>는 다수량 옵션 결제가 동시에 일어납니다. <strong>중지된 [스티커제작] 그룹 재가동 + 롱테일 구매 키워드 집중</strong>으로 ROAS를 극대화합니다.
+          </p>
+          <div id="trackBSummaryBox"></div>
+        </div>
+      </div>
+
+      <!-- 캠페인별 성과 요약 표 -->
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">🗂️ 쿠팡 광고센터 캠페인별 성과 요약 (최근 7일 기준: 2026.10.13 ~ 10.19)</div>
+            <div class="card-desc">AI스마트광고(매출최적화 ROAS 300%)와 02. 키워드 등록(수동 성과형 9개 그룹) 실시간 비교</div>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>캠페인명</th>
+                <th>운영 방식 / 상태</th>
+                <th class="num-col">일예산</th>
+                <th class="num-col">목표 ROAS / 입찰방식</th>
+                <th class="num-col">노출수</th>
+                <th class="num-col">클릭수</th>
+                <th class="num-col">CTR</th>
+                <th class="num-col">평균 CPC</th>
+                <th class="num-col">집행 광고비</th>
+                <th class="num-col">전환 주문(판매수)</th>
+                <th class="num-col">광고 전환 매출</th>
+                <th class="num-col">광고 수익률(ROAS)</th>
+                <th>최적화 진단</th>
+              </tr>
+            </thead>
+            <tbody id="campaignTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <!-- 탭 2: 전체 10개 상품 전수 점검 & SEO·검색어 최적화 -->
+    <section class="tab-pane" id="tab-products">
+      <div class="card" style="background:linear-gradient(135deg, rgba(230,46,45,0.12), rgba(59,130,246,0.08));">
+        <div class="card-header" style="margin-bottom:6px;">
+          <div>
+            <div class="card-title">📦 쿠팡 윙 등록 전체 10개 상품 전수 점검 & 상품명(SEO)·검색어 태그(20개) 최적화</div>
+            <div class="card-desc">
+              현재 쿠팡 윙에 등록된 10개 상품 중 <strong>7개 상품의 상품명이 지나치게 짧거나(`명함`, `빌지 영수증` 등) 핵심 키워드(`스티커`)가 빠져 있습니다.</strong>
+              아래 <strong>[📋 최적 상품명 복사]</strong>와 <strong>[🏷️ 검색어 20개 복사]</strong> 버튼 또는 <strong>자동 일괄 적용</strong>으로 쿠팡 검색 노출을 3배 이상 확장하세요!
+            </div>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <select id="productTrackFilter" style="background:var(--bg-input);border:1px solid var(--border-color);color:var(--text-main);padding:7px 11px;border-radius:8px;font-size:0.82rem;">
+              <option value="ALL">전체 트랙 보기 (10종)</option>
+              <option value="phone">📞 Track A: 전화상담+계좌입금 주력 (4종)</option>
+              <option value="online">🛒 Track B: 온라인결제+상담 병행 (6종)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>등록상품ID / 구분</th>
+                <th>현재 등록상품명 ➔ 쿠팡 SEO 최적화 상품명 (클릭 시 원클릭 복사)</th>
+                <th>최적화 검색어 태그 (쿠팡 20개 슬롯 100% 채움)</th>
+                <th class="num-col">30일 판매량</th>
+                <th class="num-col">등록 판매가</th>
+                <th>광고 포함 여부 & 그룹 상태</th>
+                <th>빠른 작업</th>
+              </tr>
+            </thead>
+            <tbody id="productTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 탭 3: 캠페인·광고그룹 입찰가(ROAS) & 제외키워드 -->
+    <section class="tab-pane" id="tab-campaigns">
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">🎯 [02. 키워드 등록] 캠페인 내 9개 광고 그룹 입찰가(CPC) & 타겟팅 전·후 최적화</div>
+              <div class="card-desc">Track A(상담형)는 스마트타겟팅 CPC 거품을 제거하고, Track B(결제형)는 중지된 효자 그룹을 즉시 복구합니다.</div>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table style="min-width:680px;">
+              <thead>
+                <tr>
+                  <th>광고그룹명 (ID)</th>
+                  <th>매칭 상품 / 트랙</th>
+                  <th>현재 상태</th>
+                  <th>타겟팅 방식</th>
+                  <th class="num-col">변경 전 입찰가</th>
+                  <th class="num-col">최적화 입찰가</th>
+                  <th>최적화 조치 내용</th>
+                </tr>
+              </thead>
+              <tbody id="adGroupTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">🚫 광고비 누수 차단용 제외 키워드 관리</div>
+              <div class="card-desc">무료 양식 다운로드, 다이소/시트지 제거, 명함지갑 등 인쇄 주문과 무관한 허수 클릭 키워드를 차단합니다.</div>
+            </div>
+            <button class="btn btn-primary btn-sm" id="copyAllNegKeywordsBtn">📋 제외키워드 전체 복사</button>
+          </div>
+          <div style="display:flex;gap:8px;margin-bottom:12px;">
+            <input type="text" id="newNegKeywordInput" placeholder="추가할 제외 키워드 입력 (예: 무료양식, 다이소시트지)" style="flex:1;background:var(--bg-input);border:1px solid var(--border-color);color:var(--text-main);padding:8px 12px;border-radius:8px;font-size:0.84rem;" />
+            <button class="btn btn-sm" id="addNegKeywordBtn">➕ 추가</button>
+          </div>
+          <div class="tag-chip-wrap" id="negKeywordListWrap" style="gap:8px;"></div>
+
+          <hr style="border:none;border-top:1px solid var(--border-color);margin:18px 0;" />
+
+          <div class="card-header" style="margin-bottom:8px;">
+            <div>
+              <div class="card-title" style="font-size:0.95rem;">🤖 AI스마트광고 (캠페인 #102834348) 최적 운영 가이드</div>
+            </div>
+            <span class="badge badge-good">현재 ROAS 285.23%</span>
+          </div>
+          <div class="insight-list">
+            <div class="insight-item">
+              <span>🎯</span>
+              <div>
+                <strong>목표 ROAS: 300% ➔ 320% 상향 권장</strong><br />
+                현재 일예산 35,000원 중 일평균 약 10,758원(주간 75,308원) 소진으로 214,800원 매출(ROAS 285.23%)을 기록 중입니다. 목표 ROAS를 320%로 소폭 상향하면 저효율 노출이 줄어들고 전환율 높은 리뷰스티커·명함·스티커에 AI 예산이 집중됩니다.
+              </div>
+            </div>
+            <div class="insight-item accent">
+              <span>🖼️</span>
+              <div>
+                <strong>쿠팡 광고센터 상단 '이미지 가이드라인 위반 경고' 점검</strong><br />
+                광고센터 상단에 표시된 <em>"이미지 가이드라인을 위반한 상품, 광고가 중지되기 전에 자동으로 해결"</em> 알림에서 텍스트 과다 대표이미지가 있는 품목은 쿠팡 자동 배경/텍스트 보정 옵션을 승인하여 광고 중지를 예방하세요.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 탭 4: 전화상담·계좌입금 매출 기록부 -->
+    <section class="tab-pane" id="tab-phone-orders">
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">📞 쿠팡 유입 전화상담 · 계좌입금 주문 등록</div>
+              <div class="card-desc">빌지/영수증, 실사출력 시트지, 리플렛, 카달로그 등 쿠팡을 보고 연락해 입금/결제한 주문을 기록하면 실질 통합 ROAS가 자동 계산됩니다.</div>
+            </div>
+          </div>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="poDateInput">주문/입금 일자</label>
+              <input type="date" id="poDateInput" />
+            </div>
+            <div class="form-field">
+              <label for="poProductSelect">품목 선택</label>
+              <select id="poProductSelect">
+                <option value="13537783108">빌지/영수증/거래명세서 (Track A)</option>
+                <option value="16360123820">맞춤 실사출력 시트지 (Track A)</option>
+                <option value="15280821833">리플렛/팜플렛 (Track A)</option>
+                <option value="15280825938">카다로그/브로슈어 책자 (Track A)</option>
+                <option value="748490137">명함 대량/맞춤제작 (Track B)</option>
+                <option value="738722850">스티커 주문제작 (Track B)</option>
+                <option value="907344096">전단지/종이자석/배너/봉투 (Track B)</option>
+                <option value="11905267494">리뷰스티커 (Track B)</option>
+                <option value="11917122413">서비스스티커 (Track B)</option>
+                <option value="12350470478">취급주의스티커 (Track B)</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="poCustomerInput">고객명 / 업체명 (선택)</label>
+              <input type="text" id="poCustomerInput" placeholder="예: 행복식당 빌지 20권" />
+            </div>
+            <div class="form-field">
+              <label for="poAmountInput">결제/계좌입금 금액 (원)</label>
+              <input type="number" id="poAmountInput" step="1000" min="0" placeholder="예: 120000" />
+            </div>
+            <div class="form-field">
+              <label for="poPayTypeSelect">결제 방식</label>
+              <select id="poPayTypeSelect">
+                <option value="계좌입금(전화상담)">🏦 계좌입금 (전화/카톡 상담)</option>
+                <option value="쿠팡추가결제(단가창)">💳 쿠팡 1,000원 수량조정 결제</option>
+              </select>
+            </div>
+          </div>
+          <div style="margin-top:14px;display:flex;justify-content:flex-end;">
+            <button class="btn btn-good" id="savePhoneOrderBtn">➕ 전화/계좌입금 매출 저장 & 클라우드 동기화</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">📊 전화상담 · 계좌입금 누적 성과 요약</div>
+              <div class="card-desc">쿠팡 온라인 결제 매출에 아래 계좌입금 매출이 합산되어 통합 ROAS가 산출됩니다.</div>
+            </div>
+          </div>
+          <div id="phoneOrderSummaryCards" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px;"></div>
+          <div class="table-wrap">
+            <table style="min-width:520px;">
+              <thead>
+                <tr>
+                  <th>일자</th>
+                  <th>품목</th>
+                  <th>고객/내역</th>
+                  <th>결제방식</th>
+                  <th class="num-col">입금/결제액</th>
+                  <th>관리</th>
+                </tr>
+              </thead>
+              <tbody id="phoneOrderTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 탭 5: 오전 9시 자동보고 & 클라우드 동기화 -->
+    <section class="tab-pane" id="tab-settings">
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">⏰ 매일 오전 9시 자동 리포트 & 최적화 작업 일지</div>
+              <div class="card-desc">매일 오전 09:00 정각에 전일 쿠팡 광고·판매 현황을 점검하고 GitHub 클라우드 DB와 자동 동기화합니다.</div>
+            </div>
+            <span class="badge badge-good">스케줄러 가동 중 (매일 09:00)</span>
+          </div>
+          <div style="display:flex;gap:8px;margin-bottom:12px;">
+            <input type="text" id="newLogInput" placeholder="새로운 최적화 조치나 메모를 기록하세요..." style="flex:1;background:var(--bg-input);border:1px solid var(--border-color);color:var(--text-main);padding:8px 12px;border-radius:8px;font-size:0.84rem;" />
+            <button class="btn btn-primary btn-sm" id="addLogBtn">➕ 일지 기록</button>
+          </div>
+          <div class="action-item-list" id="optLogList"></div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">☁️ 24시간 무료 클라우드 동기화 (GitHub `db-store` & Google Drive)</div>
+              <div class="card-desc">아이폰·아이패드·PC 어디서든 동일한 데이터를 실시간으로 확인하고 수정합니다.</div>
+            </div>
+          </div>
+          <div class="form-grid" style="grid-template-columns:1fr;">
+            <div class="form-field">
+              <label for="ghTokenInput">GitHub Personal Access Token (저장소 코드에는 절대 노출되지 않음)</label>
+              <input type="password" id="ghTokenInput" placeholder="ghp_... 또는 github_pat_..." />
+            </div>
+            <div class="form-field">
+              <label for="gdriveUrlInput">Google Drive 웹 앱 URL (선택 - Google Apps Script 배포 주소)</label>
+              <input type="text" id="gdriveUrlInput" placeholder="https://script.google.com/macros/s/.../exec" />
+            </div>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;">
+            <button class="btn btn-primary" id="saveSyncConfigBtn">💾 동기화 설정 저장 & 즉시 업로드</button>
+            <button class="btn" id="pullFromCloudBtn">⬇️ 클라우드에서 불러오기</button>
+            <button class="btn btn-accent" id="copyMagicLinkBtn">🔗 아이폰/아이패드 원클릭 자동연결 링크 복사</button>
+            <button class="btn btn-danger btn-sm" id="resetDefaultDataBtn">🔄 초기 기준 데이터 복원</button>
+          </div>
+          <div style="margin-top:14px;padding:12px;background:var(--bg-input);border-radius:8px;font-size:0.8rem;color:var(--text-sub);">
+            💡 <strong>원클릭 자동연결 링크란?</strong><br />
+            <code>https://joonoodesign.github.io/coupang-ad-optimizer/#ghSync=...</code> 형태의 보안 해시 링크로, 카카오톡 나에게 보내기 등으로 아이폰·아이패드에서 한 번만 터치하면 토큰이 기기 내부(localStorage)에 자동 등록되고 주소창에서는 즉시 사라져 안전하게 실시간 동기화됩니다.
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 사용법 튜토리얼 모달 -->
+  <div class="modal-overlay" id="tutorialModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>📘 주누디자인 쿠팡(Wing) 상품·광고 최적화 센터 사용 가이드</h3>
+        <button class="close-btn" id="closeTutorialBtn">&times;</button>
+      </div>
+      <div class="tutorial-step">
+        <h4>Step 1. 비즈니스 특성에 맞춘 2-Track 맞춤 관리</h4>
+        <ul>
+          <li><strong>📞 Track A (전화상담 + 계좌입금 주력)</strong>: <code>빌지/영수증</code>, <code>실사출력 시트지</code>, <code>리플렛/팜플렛</code>, <code>카다로그</code>는 쿠팡에 1,000원 기준단가로 등록되어 있고 실제 고액 주문은 전화상담 후 계좌입금으로 이루어집니다. 온라인 ROAS만 보고 광고를 끄지 않도록 <strong>스마트타겟팅 CPC를 150~180원으로 낮춰 클릭 유입을 극대화</strong>합니다.</li>
+          <li><strong>🛒 Track B (온라인 즉시결제 + 상담 병행)</strong>: <code>명함</code>, <code>스티커</code>, <code>전단지</code>, <code>리뷰스티커</code>, <code>서비스스티커</code>, <code>취급주의스티커</code>는 즉시결제가 활발합니다. 중지되어 있던 <code>스티커제작</code> 수동 광고그룹을 켜고 <code>서비스스티커</code>를 추가해 매출을 끌어올립니다.</li>
+        </ul>
+      </div>
+      <div class="tutorial-step">
+        <h4>Step 2. 전체 10개 상품 SEO 상품명 & 검색어 태그(20개) 원클릭 적용</h4>
+        <ul>
+          <li><strong>[📦 전체 10개 상품 & SEO·검색어 최적화]</strong> 탭에서 각 상품의 <strong>[📋 새 상품명 복사]</strong>와 <strong>[🏷️ 검색어 20개 복사]</strong> 버튼을 누르면 쿠팡 알고리즘에 최적화된 상품명과 20개 검색어 태그가 즉시 복사됩니다.</li>
+          <li>옆의 <strong>[🔗 윙 수정]</strong> 버튼을 눌러 쿠팡 윙 상품 수정 화면에 바로 붙여넣거나 자동 최적화 스크립트로 일괄 반영할 수 있습니다.</li>
+        </ul>
+      </div>
+      <div class="tutorial-step">
+        <h4>Step 3. 전화상담 · 계좌입금 매출 5초 기록 & 통합 ROAS 확인</h4>
+        <ul>
+          <li>쿠팡을 보고 전화/카톡으로 문의해 계좌이체한 주문은 상단 <strong>[📞 전화/계좌입금 매출 기록]</strong> 버튼이나 4번째 탭에서 간편히 입력하세요.</li>
+          <li>쿠팡 온라인 전환매출(586,800원)과 합산된 <strong>'통합 실질 ROAS(%)'</strong>가 실시간으로 계산됩니다.</li>
+        </ul>
+      </div>
+      <div class="tutorial-step">
+        <h4>Step 4. 아이폰 · 아이패드 · PC 24시간 실시간 동기화 & 매일 오전 9시 자동 보고</h4>
+        <ul>
+          <li>전달드린 <strong>원클릭 자동연결 링크</strong>를 아이폰/아이패드 사파리에서 열고 <strong>[공유 ➔ 홈 화면에 추가]</strong>를 누르면 전용 앱처럼 설치됩니다.</li>
+          <li>매일 오전 9시 정각에 스케줄러가 일일 성과를 자동 점검하여 브리핑 및 클라우드 DB를 갱신합니다.</li>
+        </ul>
+      </div>
+      <div style="display:flex;justify-content:flex-end;margin-top:14px;">
+        <button class="btn btn-primary" id="startAppFromTutorialBtn">🚀 확인했습니다 (시작하기)</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-box" id="toastBox">복사되었습니다!</div>
+  <script src="app.js"></script>
+</body>
+</html>
