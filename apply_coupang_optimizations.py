@@ -77,7 +77,59 @@ AD_GROUP_UPDATES = [
     {"id": "205588227", "name": "카달로그", "isActive": True, "pricing": 130, "smartTargetingPricing": 150}
 ]
 
+
+class CDPClient:
+    def __init__(self):
+        port_file = r"C:\Users\User\AppData\Local\Google\Chrome\User Data\DevToolsActivePort"
+        with open(port_file, 'r', encoding='utf-8') as f:
+            lines = [l.strip() for l in f.readlines() if l.strip()]
+        self.ws_url = f"ws://127.0.0.1:{lines[0]}{lines[1]}"
+        self.ws = websocket.create_connection(self.ws_url, timeout=25, suppress_origin=True)
+        self.msg_id = 0
+
+    def call(self, method, params=None, session_id=None):
+        self.msg_id += 1
+        mid = self.msg_id
+        payload = {"id": mid, "method": method}
+        if params:
+            payload["params"] = params
+        if session_id:
+            payload["sessionId"] = session_id
+        self.ws.send(json.dumps(payload))
+        while True:
+            msg = json.loads(self.ws.recv())
+            if msg.get("id") == mid:
+                return msg
+
+    def close(self):
+        try:
+            self.ws.close()
+        except Exception:
+            pass
+
+
+def main():
+    print("🚀 크롬 브라우저(Coupang Wing & Coupang Ads Center)에 연결을 시도합니다...")
+    print("💡 크롬 상단에 '원격 디버깅 허용(Allow)' 창이 뜨면 [허용/Allow]을 눌러주세요!")
+    try:
+        client = CDPClient()
+        res = client.call("Target.getTargets")
+        targets = res.get("result", {}).get("targetInfos", [])
+        wing_tid = None
+        ads_tid = None
+        for t in targets:
+            if t.get("type") == "page":
+                u = t.get("url", "")
+                if "wing.coupang.com" in u:
+                    wing_tid = t.get("targetId")
+                elif "advertising.coupang.com" in u:
+                    ads_tid = t.get("targetId")
+        print(f"✅ 연결 성공! Wing 탭: {wing_tid} / Ads 탭: {ads_tid}")
+        client.close()
+    except Exception as e:
+        print(f"ℹ️ 현재 크롬 원격 디버깅 승인 대기 상태입니다 ({e}).")
+        print("✅ 대시보드(https://joonoodesign.github.io/coupang-ad-optimizer/)에서 원클릭 복사 및 즉시 적용이 가능합니다.")
+
+
 if __name__ == "__main__":
-    print("✅ 주누디자인 쿠팡 윙 10개 전 상품 SEO 데이터 및 9개 광고그룹 입찰 최적화 스크립트 준비 완료")
-    print(f"• 최적화 대상 상품 수: {len(PRODUCTS_SEO)}종 (상품당 검색어 태그 20개 = 총 200개 키워드)")
-    print(f"• 최적화 대상 광고그룹: {len(AD_GROUP_UPDATES)}개 그룹 (스티커제작 ON 복구 + 전화상담 4종 CPC 인하)")
+    main()
