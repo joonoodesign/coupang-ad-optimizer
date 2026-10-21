@@ -577,13 +577,32 @@ function getDefaultData() {
 
 let appData = loadAppData();
 
+function mergeWithDefaultData(parsed) {
+  const def = getDefaultData();
+  if (!parsed) return def;
+  const mergedProducts = (def.products || []).map(dp => {
+    const rp = (parsed.products || []).find(p => String(p.id) === String(dp.id));
+    return rp ? { ...dp, ...rp, directUrl: dp.directUrl, shortLabel: dp.shortLabel, searchTags: dp.searchTags, priceLabel: dp.priceLabel, issueNote: dp.issueNote } : dp;
+  });
+  const existingLogIds = new Set((parsed.optimizationLogs || []).map(l => l.id));
+  const mergedLogs = [
+    ...(parsed.optimizationLogs || []),
+    ...(def.optimizationLogs || []).filter(l => !existingLogIds.has(l.id))
+  ];
+  return {
+    ...def,
+    ...parsed,
+    products: mergedProducts,
+    optimizationLogs: mergedLogs,
+    baseline: { ...def.baseline, ...(parsed.baseline || {}) }
+  };
+}
+
 function loadAppData() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (raw) {
-      const parsed = JSON.parse(raw);
-      const def = getDefaultData();
-      return { ...def, ...parsed, baseline: { ...def.baseline, ...(parsed.baseline || {}) } };
+      return mergeWithDefaultData(JSON.parse(raw));
     }
   } catch (e) {}
   return getDefaultData();
@@ -666,9 +685,8 @@ async function pullFromCloud(silent = false) {
       }
     }
 
-    if (remoteData && remoteData.products) {
-      const def = getDefaultData();
-      appData = { ...def, ...remoteData, baseline: { ...def.baseline, ...(remoteData.baseline || {}) } };
+    if (remoteData && (remoteData.products || remoteData.optimizationLogs)) {
+      appData = mergeWithDefaultData(remoteData);
       localStorage.setItem(STORAGE_KEY, JSON.stringify(appData));
       renderAll();
       updateSyncBadge('online', cfg.ghToken ? 'GitHub 실시간 동기화됨 (읽기/쓰기)' : 'GitHub 클라우드 최신 수신됨');
