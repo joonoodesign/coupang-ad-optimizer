@@ -1,0 +1,4325 @@
+{
+  "backedUpAt": "2026-10-21 13:49:23",
+  "products": {
+    "748490137": {
+      "label": "명함",
+      "data": {
+        "singleOpt": {
+          "attributeOptions": [
+            "색상",
+            "총 수량"
+          ],
+          "selectedUnitLabel": "",
+          "unitSelectionOptions": [],
+          "items": [
+            {
+              "_attributes": [
+                {
+                  "attributeTypeId": 2439,
+                  "attributeTypeName": "색상",
+                  "attributeValueName": "수량",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                },
+                {
+                  "attributeTypeId": 7663,
+                  "attributeTypeName": "총 수량",
+                  "attributeValueName": "1개",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                }
+              ],
+              "_internalAttributes": [],
+              "_attributeMap": {
+                "색상": {
+                  "attributeTypeId": 2439,
+                  "attributeTypeName": "색상",
+                  "attributeValueName": "수량",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                },
+                "총 수량": {
+                  "attributeTypeId": 7663,
+                  "attributeTypeName": "총 수량",
+                  "attributeValueName": "1개",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                }
+              },
+              "_checked": false,
+              "_hidden": false,
+              "_childUpbundleItems": [],
+              "_parentItem": null,
+              "_updatingChildItems": false,
+              "itemName": "수량 1개",
+              "salePrice": 1000,
+              "originalPrice": 0,
+              "maximumBuyCount": 74548,
+              "outboundShippingTimeDay": 6,
+              "externalVendorSku": "",
+              "modelNo": "",
+              "isModelNoEmpty": true,
+              "barcode": "",
+              "coupangBarcode": "",
+              "sellerProductItemId": 1787696023,
+              "vendorItemId": 4759007683,
+              "originalVendorItemId": null,
+              "validType": "VALID",
+              "itemId": 26519058612,
+              "productId": 9039048547,
+              "_preMatchingRetrievalSource": null,
+              "_preMatchingSourceProductId": 9039048547,
+              "registrationType": "NORMAL",
+              "subRegistrationType": null,
+              "processType": "APPROVED",
+              "images": [
+                {
+                  "imageOrder": 0,
+                  "imageType": "REPRESENTATION",
+                  "cdnPath": "vendor_inventory/bc65/98974a891db028d9be5a20f2334423ec6ac805bfd79ac9c237d7e863b51d.jpg",
+                  "vendorPath": "vendor_inventory/bc65/98974a891db028d9be5a20f2334423ec6ac805bfd79ac9c237d7e863b51d.jpg"
+                },
+                {
+                  "imageOrder": 0,
+                  "imageType": "DETAIL",
+                  "cdnPath": "vendor_inventory/bc65/98974a891db028d9be5a20f2334423ec6ac805bfd79ac9c237d7e863b51d.jpg",
+                  "vendorPath": "vendor_inventory/bc65/98974a891db028d9be5a20f2334423ec6ac805bfd79ac9c237d7e863b51d.jpg"
+                }
+              ],
+              "offerCondition": "NEW",
+              "offerDescription": "",
+              "id": "d713ab38-db8d-406f-8e07-d6e33b55284e",
+              "productOrigin": "GENERAL",
+              "contents": [
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/8554/53212b0c3c5c7ed7c624f66cc20e9a33820f1ed65242438b4f6c238c7461.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/675c/6d23926fb69ffc5cb84fd2a0f5f8e8c603a641405f3cd0b0e1283a316193.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/a30c/5c9451ff75d79e8e6977ec8a7c8b7dffa7e36ffce4505c577a752245c2f3.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/5ff1/0a994a9bf17f07ce5cc34e1213ffe670ef171faba5d78bc450b618b9e363.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/b00e/41d1868697c9be240c5c86fadcf5370c9f573f85d22d1f971edc06f70302.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/6f1a/c1a0c6f0d3010df4404fa4273795121fe0c6205db0fd7e75ffba6e3b4d62.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/09b7/4f77b8da3c3b71353e3e708048b9a79d3017c761f3d011eed46485a3ff63.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/4cbe/3393d4bfaf0eee2a83b868060f61685c93482fb6e21e814ade610ba091ab.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/8e73/05dd44897c1b2c31f4cfe4544c4f7e3ad492bfaa4da56520a4ea9fc3da77.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/60c2/360997531e5c6ee0cc8253c147888d3b525310199fb8310490b38b293135.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/e48e/f6ce3f76b2c1bf225e7b79b5962a2d2a479cee3f8853c8ba79b79a319903.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/618a/654456a68a11e9fb4b2c3aea0b84b54f62ccabe0352d1a00f79a00ce9a07.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/7719/4156ceb54bc7fbf57604d391eae164a7d1ea22f91032e5e52d18b088f6d6.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/2671/6a9ae8bd32a658702132737c4d6715072409e82ca7ed0c5d2706c428787e.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                }
+              ],
+              "skuId": null,
+              "skuInfo": null,
+              "skuChecked": false,
+              "globalInfo": null,
+              "emptyBarcodeReason": "COUPANG",
+              "autoPricingInfo": {
+                "minSalePrice": 950,
+                "maxSalePrice": 1000,
+                "active": false,
+                "enableRecommendation": false,
+                "defaultAutoPricingMinPrice": null,
+                "defaultAutoPricingMaxPrice": null
+              },
+              "sameDayShipping": {
+                "active": false,
+                "cutOffTimeHour": null,
+                "cutOffTimeMinute": null,
+                "cutOffTimeZone": null
+              },
+              "upBundlingInfo": null,
+              "progressiveDiscountInfo": null,
+              "attrViolationInfo": null,
+              "searchTags": [
+                "고급명함",
+                "금박명함",
+                "대구명함",
+                "독특한명함",
+                "명함디자인",
+                "명함인쇄",
+                "명함제작",
+                "명함주문",
+                "무료디자인명함",
+                "부동산명함",
+                "소량명함",
+                "수입지명함",
+                "식당명함",
+                "심플명함",
+                "영업명함",
+                "예쁜명함",
+                "카페명함",
+                "코팅명함",
+                "쿠폰명함",
+                "회사명함"
+              ],
+              "contributionSource": null,
+              "originPrice": 0
+            }
+          ],
+          "attributeTypes": [
+            {
+              "id": 2439,
+              "name": "색상",
+              "dataType": "STRING",
+              "mandatory": true,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 7663,
+              "name": "총 수량",
+              "dataType": "NUMBER",
+              "mandatory": true,
+              "allowUnits": [
+                "箱",
+                "包",
+                "박스",
+                "個裝",
+                "count",
+                "팩",
+                "box",
+                "개",
+                "pack"
+              ],
+              "units": [
+                "개",
+                "박스",
+                "팩"
+              ]
+            },
+            {
+              "id": 10921,
+              "name": "평량",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [
+                "gsm",
+                "t",
+                "lb",
+                "g",
+                "mg",
+                "oz",
+                "kg"
+              ],
+              "units": [
+                "MG",
+                "G",
+                "KG",
+                "T",
+                "OZ",
+                "LB"
+              ]
+            },
+            {
+              "id": 7783,
+              "name": "사이즈",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 11680,
+              "name": "1장당 칸 수",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [
+                "대",
+                "頁",
+                "球",
+                "자리",
+                "현",
+                "包",
+                "枚入",
+                "봉",
+                "個",
+                "쌍",
+                "部分",
+                "每個",
+                "種分類",
+                "인분",
+                "정",
+                "캡슐",
+                "개",
+                "선",
+                "錠",
+                "次",
+                "인용",
+                "팩",
+                "次性",
+                "本",
+                "頭",
+                "種",
+                "支",
+                "건반",
+                "串",
+                "張",
+                "매입",
+                "박스",
+                "個裝",
+                "格",
+                "款",
+                "분류",
+                "組",
+                "幅",
+                "捆",
+                "顆",
+                "片",
+                "塊",
+                "行",
+                "罐",
+                "孔",
+                "套",
+                "음판",
+                "卡",
+                "회분",
+                "set",
+                "롤",
+                "層",
+                "入",
+                "구",
+                "副",
+                "杯",
+                "p",
+                "조",
+                "捲",
+                "色",
+                "鍵",
+                "桶",
+                "칸",
+                "입",
+                "종",
+                "頁數",
+                "번",
+                "冊",
+                "把",
+                "邊",
+                "型",
+                "袋",
+                "권",
+                "회",
+                "프렛",
+                "캔",
+                "세트",
+                "枚",
+                "條",
+                "管",
+                "장",
+                "箱",
+                "통",
+                "段",
+                "人",
+                "Ea",
+                "쪽",
+                "抽",
+                "位數",
+                "색",
+                "box",
+                "단계",
+                "병",
+                "盒",
+                "스틱",
+                "雙",
+                "回",
+                "口",
+                "매",
+                "단",
+                "포",
+                "폭",
+                "rpm",
+                "台",
+                "피스",
+                "마리",
+                "공",
+                "件",
+                "瓶",
+                "개입"
+              ],
+              "units": [
+                "PIECE",
+                "PCS",
+                "SHEET",
+                "SHEETS",
+                "PACK",
+                "BITE",
+                "PAGE",
+                "BOTTLE",
+                "PERSON",
+                "PORTION",
+                "BOX",
+                "EA",
+                "포",
+                "캔",
+                "박스",
+                "STICK_KO",
+                "BOOK",
+                "SET",
+                "SET_KOR",
+                "SET_KOR_COUNT",
+                "CAPSULE",
+                "CARTON",
+                "PILL",
+                "SACK",
+                "HEAD",
+                "ROLL",
+                "P",
+                "KU_KR",
+                "PIECES",
+                "NUMBER_OF_TIMES",
+                "NUMBER_OF_VOLUMN",
+                "NUMBER_OF_STEP",
+                "NUMBER_OF_TIMES_BUN",
+                "FRET_COUNT",
+                "PLATE_COUNT",
+                "KEY_COUNT",
+                "PAGE_COUNT",
+                "COLUMN_COUNT",
+                "CELL_COUNT",
+                "KIND_COUNT",
+                "SEP_COUNT",
+                "LINE_COUNT",
+                "LINE_COUNT_LINE",
+                "PUNCHING_COUNT",
+                "NUM_LENGTH_COUNT",
+                "FOLDING_COUNT",
+                "RPM_COUNT",
+                "COLOR_COUNT",
+                "VEHICLE_COUNT",
+                "PAIR"
+              ]
+            },
+            {
+              "id": 10396,
+              "name": "사용프린터",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 11161,
+              "name": "용지 광택 여부",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 7652,
+              "name": "수량",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [
+                "대",
+                "頁",
+                "球",
+                "자리",
+                "현",
+                "包",
+                "枚入",
+                "봉",
+                "個",
+                "쌍",
+                "部分",
+                "每個",
+                "種分類",
+                "인분",
+                "정",
+                "캡슐",
+                "개",
+                "선",
+                "錠",
+                "次",
+                "인용",
+                "팩",
+                "个",
+                "次性",
+                "本",
+                "頭",
+                "種",
+                "支",
+                "건반",
+                "串",
+                "張",
+                "매입",
+                "박스",
+                "個裝",
+                "格",
+                "款",
+                "분류",
+                "組",
+                "幅",
+                "捆",
+                "顆",
+                "片",
+                "塊",
+                "fret",
+                "行",
+                "罐",
+                "孔",
+                "套",
+                "음판",
+                "卡",
+                "회분",
+                "set",
+                "롤",
+                "層",
+                "入",
+                "구",
+                "副",
+                "杯",
+                "p",
+                "조",
+                "捲",
+                "色",
+                "鍵",
+                "桶",
+                "칸",
+                "입",
+                "종",
+                "頁數",
+                "번",
+                "冊",
+                "把",
+                "邊",
+                "型",
+                "袋",
+                "권",
+                "회",
+                "프렛",
+                "캔",
+                "세트",
+                "枚",
+                "條",
+                "管",
+                "장",
+                "箱",
+                "통",
+                "段",
+                "人",
+                "Ea",
+                "쪽",
+                "抽",
+                "品",
+                "位數",
+                "색",
+                "box",
+                "단계",
+                "병",
+                "盒",
+                "스틱",
+                "雙",
+                "回",
+                "口",
+                "매",
+                "단",
+                "포",
+                "폭",
+                "rpm",
+                "台",
+                "피스",
+                "마리",
+                "공",
+                "件",
+                "瓶",
+                "개입"
+              ],
+              "units": [
+                "PIECE",
+                "PCS",
+                "SHEET",
+                "SHEETS",
+                "PACK",
+                "BITE",
+                "PAGE",
+                "BOTTLE",
+                "PERSON",
+                "PORTION",
+                "BOX",
+                "EA",
+                "포",
+                "캔",
+                "박스",
+                "STICK_KO",
+                "BOOK",
+                "SET",
+                "SET_KOR",
+                "SET_KOR_COUNT",
+                "CAPSULE",
+                "CARTON",
+                "PILL",
+                "SACK",
+                "HEAD",
+                "ROLL",
+                "P",
+                "KU_KR",
+                "PIECES",
+                "NUMBER_OF_TIMES",
+                "NUMBER_OF_VOLUMN",
+                "NUMBER_OF_STEP",
+                "NUMBER_OF_TIMES_BUN",
+                "FRET_COUNT",
+                "PLATE_COUNT",
+                "KEY_COUNT",
+                "PAGE_COUNT",
+                "COLUMN_COUNT",
+                "CELL_COUNT",
+                "KIND_COUNT",
+                "SEP_COUNT",
+                "LINE_COUNT",
+                "LINE_COUNT_LINE",
+                "PUNCHING_COUNT",
+                "NUM_LENGTH_COUNT",
+                "FOLDING_COUNT",
+                "RPM_COUNT",
+                "COLOR_COUNT",
+                "VEHICLE_COUNT",
+                "PAIR"
+              ]
+            },
+            {
+              "id": 16411,
+              "name": "Manufacturer Part Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 16410,
+              "name": "Parent Manufacturer Part Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 16409,
+              "name": "Global Trade Item Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            }
+          ]
+        },
+        "optInputs": [
+          {
+            "idx": 10,
+            "placeholder": "옵션값 입력",
+            "value": "수량",
+            "disabled": true,
+            "cls": ""
+          },
+          {
+            "idx": 11,
+            "placeholder": "숫자만 입력",
+            "value": "1",
+            "disabled": true,
+            "cls": ""
+          }
+        ]
+      }
+    },
+    "738722850": {
+      "label": "스티커",
+      "data": {
+        "singleOpt": {
+          "attributeOptions": [
+            "색상",
+            "총 수량"
+          ],
+          "selectedUnitLabel": "",
+          "unitSelectionOptions": [],
+          "items": [
+            {
+              "_attributes": [
+                {
+                  "attributeTypeId": 2439,
+                  "attributeTypeName": "색상",
+                  "attributeValueName": "수량",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                },
+                {
+                  "attributeTypeId": 7663,
+                  "attributeTypeName": "총 수량",
+                  "attributeValueName": "1개",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                }
+              ],
+              "_internalAttributes": [],
+              "_attributeMap": {
+                "색상": {
+                  "attributeTypeId": 2439,
+                  "attributeTypeName": "색상",
+                  "attributeValueName": "수량",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                },
+                "총 수량": {
+                  "attributeTypeId": 7663,
+                  "attributeTypeName": "총 수량",
+                  "attributeValueName": "1개",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                }
+              },
+              "_checked": false,
+              "_hidden": false,
+              "_childUpbundleItems": [],
+              "_parentItem": null,
+              "_updatingChildItems": false,
+              "itemName": "수량 1개",
+              "salePrice": 1000,
+              "originalPrice": 0,
+              "maximumBuyCount": 71196,
+              "outboundShippingTimeDay": 4,
+              "externalVendorSku": "",
+              "modelNo": "",
+              "isModelNoEmpty": true,
+              "barcode": "",
+              "coupangBarcode": "",
+              "sellerProductItemId": 1760347655,
+              "vendorItemId": 4733809722,
+              "originalVendorItemId": null,
+              "validType": "VALID",
+              "itemId": 672166950,
+              "productId": 217573425,
+              "_preMatchingRetrievalSource": null,
+              "_preMatchingSourceProductId": 217573425,
+              "registrationType": "NORMAL",
+              "subRegistrationType": null,
+              "processType": "APPROVED",
+              "images": [
+                {
+                  "imageOrder": 0,
+                  "imageType": "REPRESENTATION",
+                  "cdnPath": "vendor_inventory/29e6/5383f3438a2faebdab8b396ffe692f93dbd71d068d15e14fa95c1973d1d9.jpg",
+                  "vendorPath": "5383f3438a2faebdab8b396ffe692f93dbd71d068d15e14fa95c1973d1d9.jpg"
+                },
+                {
+                  "imageOrder": 0,
+                  "imageType": "DETAIL",
+                  "cdnPath": "vendor_inventory/dec3/c4ec85296e64efa708e0359819fce9c6328c20ef51a787c0e8b3f8f6fe2c.jpg",
+                  "vendorPath": "c4ec85296e64efa708e0359819fce9c6328c20ef51a787c0e8b3f8f6fe2c.jpg"
+                },
+                {
+                  "imageOrder": 1,
+                  "imageType": "DETAIL",
+                  "cdnPath": "vendor_inventory/49af/1db138cf5d22f92b1cf2b24198aa9f176a48dcf946cbd4eaf423dcf61fe8.jpg",
+                  "vendorPath": "1db138cf5d22f92b1cf2b24198aa9f176a48dcf946cbd4eaf423dcf61fe8.jpg"
+                },
+                {
+                  "imageOrder": 2,
+                  "imageType": "DETAIL",
+                  "cdnPath": "vendor_inventory/4e81/eb5bf0ea19a7e88d107d4208ae48f04c23954121704f8da7f57a69c02e71.jpg",
+                  "vendorPath": "eb5bf0ea19a7e88d107d4208ae48f04c23954121704f8da7f57a69c02e71.jpg"
+                },
+                {
+                  "imageOrder": 3,
+                  "imageType": "DETAIL",
+                  "cdnPath": "vendor_inventory/226a/1b2e787d007946fdca2636301dc50c030e6db786a98e59212485c70cff77.jpg",
+                  "vendorPath": "1b2e787d007946fdca2636301dc50c030e6db786a98e59212485c70cff77.jpg"
+                }
+              ],
+              "offerCondition": "NEW",
+              "offerDescription": "",
+              "id": "8d3c2a07-0789-416a-b4e2-158afb7e8666",
+              "productOrigin": "GENERAL",
+              "contents": [
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/c7ae/e1c0101de324666d8fd8dcf66d217d1522f0fd7ae97496b96be1c9d72296.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/5527/7320316a22deee06161e85de6f455a5d0aa4b38ee0a37c693fb7e61bc08b.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/5344/8b946f2c45b78e9483e1e816e747f9e200ad076d45c3a83e6ff477d52191.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/15ea/6a3f83452ced70b0c9bfa42859cdc7302aae96d7e58607cd47b7a33a6bf2.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/2dc1/dd3ebcb8ae4b78eb6cdcbac707e3531fa47d27d0eaa20f512e90d7bbface.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/908b/78869ab109de0c3cb31a182f7112ab9eea255805401c7102d1f0cfeb6ec7.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/af0f/7db4d0e50d42aec2c6abfd8ec3313db3831b559d61a2fcbd195341aee9c5.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/42b1/ddc7a0c006fb50f63163462fb1054f6e7981ffab07da4961e5fdc9101489.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/e4a0/626e313a24b1dc3bf258293d5e1083d5bbc8504c5132a2340a17100a9c36.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/e664/2d7708811a4478a38e6fb33c1a56cb5edf696e097881099d9ab60b28f71c.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/dd9e/918b750b609ec2b007bc9d084e7da72d9be5d171b007dc31be6cef887ae9.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                }
+              ],
+              "skuId": null,
+              "skuInfo": null,
+              "skuChecked": false,
+              "globalInfo": null,
+              "emptyBarcodeReason": "COUPANG",
+              "autoPricingInfo": {
+                "minSalePrice": 950,
+                "maxSalePrice": 1000,
+                "active": false,
+                "enableRecommendation": false,
+                "defaultAutoPricingMinPrice": null,
+                "defaultAutoPricingMaxPrice": null
+              },
+              "sameDayShipping": {
+                "active": false,
+                "cutOffTimeHour": null,
+                "cutOffTimeMinute": null,
+                "cutOffTimeZone": null
+              },
+              "upBundlingInfo": null,
+              "progressiveDiscountInfo": null,
+              "attrViolationInfo": null,
+              "searchTags": [
+                "답례품스티커",
+                "도무송스티커",
+                "라벨스티커",
+                "로고스티커",
+                "맞춤스티커",
+                "방수스티커",
+                "배달스티커",
+                "사각스티커",
+                "상호스티커",
+                "소량스티커",
+                "스티커소량제작",
+                "스티커인쇄",
+                "스티커제작",
+                "원형스티커",
+                "유포지스티커",
+                "제품스티커",
+                "초강접스티커",
+                "코팅스티커",
+                "투명스티커",
+                "포장스티커"
+              ],
+              "contributionSource": null,
+              "originPrice": 0
+            }
+          ],
+          "attributeTypes": [
+            {
+              "id": 2439,
+              "name": "색상",
+              "dataType": "STRING",
+              "mandatory": true,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 7663,
+              "name": "총 수량",
+              "dataType": "NUMBER",
+              "mandatory": true,
+              "allowUnits": [
+                "箱",
+                "包",
+                "박스",
+                "個裝",
+                "count",
+                "팩",
+                "box",
+                "개",
+                "pack"
+              ],
+              "units": [
+                "개",
+                "박스",
+                "팩"
+              ]
+            },
+            {
+              "id": 10921,
+              "name": "평량",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [
+                "gsm",
+                "t",
+                "lb",
+                "g",
+                "mg",
+                "oz",
+                "kg"
+              ],
+              "units": [
+                "MG",
+                "G",
+                "KG",
+                "T",
+                "OZ",
+                "LB"
+              ]
+            },
+            {
+              "id": 7783,
+              "name": "사이즈",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 11680,
+              "name": "1장당 칸 수",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [
+                "대",
+                "頁",
+                "球",
+                "자리",
+                "현",
+                "包",
+                "枚入",
+                "봉",
+                "個",
+                "쌍",
+                "部分",
+                "每個",
+                "種分類",
+                "인분",
+                "정",
+                "캡슐",
+                "개",
+                "선",
+                "錠",
+                "次",
+                "인용",
+                "팩",
+                "次性",
+                "本",
+                "頭",
+                "種",
+                "支",
+                "건반",
+                "串",
+                "張",
+                "매입",
+                "박스",
+                "個裝",
+                "格",
+                "款",
+                "분류",
+                "組",
+                "幅",
+                "捆",
+                "顆",
+                "片",
+                "塊",
+                "行",
+                "罐",
+                "孔",
+                "套",
+                "음판",
+                "卡",
+                "회분",
+                "set",
+                "롤",
+                "層",
+                "入",
+                "구",
+                "副",
+                "杯",
+                "p",
+                "조",
+                "捲",
+                "色",
+                "鍵",
+                "桶",
+                "칸",
+                "입",
+                "종",
+                "頁數",
+                "번",
+                "冊",
+                "把",
+                "邊",
+                "型",
+                "袋",
+                "권",
+                "회",
+                "프렛",
+                "캔",
+                "세트",
+                "枚",
+                "條",
+                "管",
+                "장",
+                "箱",
+                "통",
+                "段",
+                "人",
+                "Ea",
+                "쪽",
+                "抽",
+                "位數",
+                "색",
+                "box",
+                "단계",
+                "병",
+                "盒",
+                "스틱",
+                "雙",
+                "回",
+                "口",
+                "매",
+                "단",
+                "포",
+                "폭",
+                "rpm",
+                "台",
+                "피스",
+                "마리",
+                "공",
+                "件",
+                "瓶",
+                "개입"
+              ],
+              "units": [
+                "PIECE",
+                "PCS",
+                "SHEET",
+                "SHEETS",
+                "PACK",
+                "BITE",
+                "PAGE",
+                "BOTTLE",
+                "PERSON",
+                "PORTION",
+                "BOX",
+                "EA",
+                "포",
+                "캔",
+                "박스",
+                "STICK_KO",
+                "BOOK",
+                "SET",
+                "SET_KOR",
+                "SET_KOR_COUNT",
+                "CAPSULE",
+                "CARTON",
+                "PILL",
+                "SACK",
+                "HEAD",
+                "ROLL",
+                "P",
+                "KU_KR",
+                "PIECES",
+                "NUMBER_OF_TIMES",
+                "NUMBER_OF_VOLUMN",
+                "NUMBER_OF_STEP",
+                "NUMBER_OF_TIMES_BUN",
+                "FRET_COUNT",
+                "PLATE_COUNT",
+                "KEY_COUNT",
+                "PAGE_COUNT",
+                "COLUMN_COUNT",
+                "CELL_COUNT",
+                "KIND_COUNT",
+                "SEP_COUNT",
+                "LINE_COUNT",
+                "LINE_COUNT_LINE",
+                "PUNCHING_COUNT",
+                "NUM_LENGTH_COUNT",
+                "FOLDING_COUNT",
+                "RPM_COUNT",
+                "COLOR_COUNT",
+                "VEHICLE_COUNT",
+                "PAIR"
+              ]
+            },
+            {
+              "id": 10396,
+              "name": "사용프린터",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 11161,
+              "name": "용지 광택 여부",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 7652,
+              "name": "수량",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [
+                "대",
+                "頁",
+                "球",
+                "자리",
+                "현",
+                "包",
+                "枚入",
+                "봉",
+                "個",
+                "쌍",
+                "部分",
+                "每個",
+                "種分類",
+                "인분",
+                "정",
+                "캡슐",
+                "개",
+                "선",
+                "錠",
+                "次",
+                "인용",
+                "팩",
+                "个",
+                "次性",
+                "本",
+                "頭",
+                "種",
+                "支",
+                "건반",
+                "串",
+                "張",
+                "매입",
+                "박스",
+                "個裝",
+                "格",
+                "款",
+                "분류",
+                "組",
+                "幅",
+                "捆",
+                "顆",
+                "片",
+                "塊",
+                "fret",
+                "行",
+                "罐",
+                "孔",
+                "套",
+                "음판",
+                "卡",
+                "회분",
+                "set",
+                "롤",
+                "層",
+                "入",
+                "구",
+                "副",
+                "杯",
+                "p",
+                "조",
+                "捲",
+                "色",
+                "鍵",
+                "桶",
+                "칸",
+                "입",
+                "종",
+                "頁數",
+                "번",
+                "冊",
+                "把",
+                "邊",
+                "型",
+                "袋",
+                "권",
+                "회",
+                "프렛",
+                "캔",
+                "세트",
+                "枚",
+                "條",
+                "管",
+                "장",
+                "箱",
+                "통",
+                "段",
+                "人",
+                "Ea",
+                "쪽",
+                "抽",
+                "品",
+                "位數",
+                "색",
+                "box",
+                "단계",
+                "병",
+                "盒",
+                "스틱",
+                "雙",
+                "回",
+                "口",
+                "매",
+                "단",
+                "포",
+                "폭",
+                "rpm",
+                "台",
+                "피스",
+                "마리",
+                "공",
+                "件",
+                "瓶",
+                "개입"
+              ],
+              "units": [
+                "PIECE",
+                "PCS",
+                "SHEET",
+                "SHEETS",
+                "PACK",
+                "BITE",
+                "PAGE",
+                "BOTTLE",
+                "PERSON",
+                "PORTION",
+                "BOX",
+                "EA",
+                "포",
+                "캔",
+                "박스",
+                "STICK_KO",
+                "BOOK",
+                "SET",
+                "SET_KOR",
+                "SET_KOR_COUNT",
+                "CAPSULE",
+                "CARTON",
+                "PILL",
+                "SACK",
+                "HEAD",
+                "ROLL",
+                "P",
+                "KU_KR",
+                "PIECES",
+                "NUMBER_OF_TIMES",
+                "NUMBER_OF_VOLUMN",
+                "NUMBER_OF_STEP",
+                "NUMBER_OF_TIMES_BUN",
+                "FRET_COUNT",
+                "PLATE_COUNT",
+                "KEY_COUNT",
+                "PAGE_COUNT",
+                "COLUMN_COUNT",
+                "CELL_COUNT",
+                "KIND_COUNT",
+                "SEP_COUNT",
+                "LINE_COUNT",
+                "LINE_COUNT_LINE",
+                "PUNCHING_COUNT",
+                "NUM_LENGTH_COUNT",
+                "FOLDING_COUNT",
+                "RPM_COUNT",
+                "COLOR_COUNT",
+                "VEHICLE_COUNT",
+                "PAIR"
+              ]
+            },
+            {
+              "id": 16411,
+              "name": "Manufacturer Part Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 16410,
+              "name": "Parent Manufacturer Part Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 16409,
+              "name": "Global Trade Item Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            }
+          ]
+        },
+        "optInputs": [
+          {
+            "idx": 10,
+            "placeholder": "옵션값 입력",
+            "value": "수량",
+            "disabled": true,
+            "cls": ""
+          },
+          {
+            "idx": 11,
+            "placeholder": "숫자만 입력",
+            "value": "1",
+            "disabled": true,
+            "cls": ""
+          }
+        ]
+      }
+    },
+    "907344096": {
+      "label": "전단지",
+      "data": {
+        "singleOpt": {
+          "attributeOptions": [
+            "색상",
+            "총 수량"
+          ],
+          "selectedUnitLabel": "",
+          "unitSelectionOptions": [],
+          "items": [
+            {
+              "_attributes": [
+                {
+                  "attributeTypeId": 2439,
+                  "attributeTypeName": "색상",
+                  "attributeValueName": "수량",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                },
+                {
+                  "attributeTypeId": 7663,
+                  "attributeTypeName": "총 수량",
+                  "attributeValueName": "1개",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                }
+              ],
+              "_internalAttributes": [],
+              "_attributeMap": {
+                "색상": {
+                  "attributeTypeId": 2439,
+                  "attributeTypeName": "색상",
+                  "attributeValueName": "수량",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                },
+                "총 수량": {
+                  "attributeTypeId": 7663,
+                  "attributeTypeName": "총 수량",
+                  "attributeValueName": "1개",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                }
+              },
+              "_checked": false,
+              "_hidden": false,
+              "_childUpbundleItems": [],
+              "_parentItem": null,
+              "_updatingChildItems": false,
+              "itemName": "수량 1개",
+              "salePrice": 1000,
+              "originalPrice": 0,
+              "maximumBuyCount": 92825,
+              "outboundShippingTimeDay": 3,
+              "externalVendorSku": "",
+              "modelNo": "",
+              "isModelNoEmpty": true,
+              "barcode": "",
+              "coupangBarcode": "",
+              "sellerProductItemId": 2187766807,
+              "vendorItemId": 5128858525,
+              "originalVendorItemId": null,
+              "validType": "VALID",
+              "itemId": 836257131,
+              "productId": 266837463,
+              "_preMatchingRetrievalSource": null,
+              "_preMatchingSourceProductId": 266837463,
+              "registrationType": "NORMAL",
+              "subRegistrationType": null,
+              "processType": "APPROVED",
+              "images": [
+                {
+                  "imageOrder": 0,
+                  "imageType": "REPRESENTATION",
+                  "cdnPath": "vendor_inventory/8759/ffe57e88f5f82b45ca954647a0c00611ff02128cef2146a6948adc41ee8d.jpg",
+                  "vendorPath": "ffe57e88f5f82b45ca954647a0c00611ff02128cef2146a6948adc41ee8d.jpg"
+                }
+              ],
+              "offerCondition": "NEW",
+              "offerDescription": "",
+              "id": "ee9c93b0-6081-4085-a799-204194d74212",
+              "productOrigin": "GENERAL",
+              "contents": [
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/eaf0/353ac3d9b566025cd84105011178e7e629c06893fbd1b2d0e7330993c25e.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/17d2/cab35510990f034fe99de38811decff0ea2a64bd7e10f461f56187da90d3.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/0ddc/7576a8c6b4432bd5996944bfdf909ba123ceb819523bcb1f83ad5e892159.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/1488/fbd447787f991080501d41ea7fe95214cc1dbfa867d1e2d364edbca78ab3.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/c6e5/0c845475af616a1a7cf75d43c20976b981d1c4199a55f84cbda3a0c89a2d.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/500a/09f76e9328564f2aa8366a94840dd616f7de8a10d23c10c27314425d3a1c.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/da57/0b60dcc8ca9b726c34d4c745fb634cadc3f435e002d52d4315c67125dea3.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/7dd9/6208fc160ff12095d8e9a5a658f77ca02b6b8be8661c931cba93a3ec0ad0.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/e7e6/d8a2ed53f17800caeea0c6903977f3e5d436d6c7ae6409c70710ec234cbd.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                }
+              ],
+              "skuId": null,
+              "skuInfo": null,
+              "skuChecked": false,
+              "globalInfo": null,
+              "emptyBarcodeReason": "COUPANG",
+              "autoPricingInfo": {
+                "minSalePrice": 950,
+                "maxSalePrice": 1000,
+                "active": false,
+                "enableRecommendation": false,
+                "defaultAutoPricingMinPrice": null,
+                "defaultAutoPricingMaxPrice": null
+              },
+              "sameDayShipping": {
+                "active": false,
+                "cutOffTimeHour": null,
+                "cutOffTimeMinute": null,
+                "cutOffTimeZone": null
+              },
+              "upBundlingInfo": null,
+              "progressiveDiscountInfo": null,
+              "attrViolationInfo": null,
+              "searchTags": [
+                "A4전단지",
+                "대봉투인쇄",
+                "배너제작",
+                "배달전단지",
+                "봉투제작",
+                "소량전단지",
+                "소봉투제작",
+                "오픈전단지",
+                "음식점전단지",
+                "인쇄물제작",
+                "자석스티커",
+                "전단지디자인",
+                "전단지인쇄",
+                "전단지제작",
+                "종이자석전단지",
+                "판촉물인쇄",
+                "학원전단지",
+                "헬스장전단지",
+                "현수막제작",
+                "홍보전단지"
+              ],
+              "contributionSource": null,
+              "originPrice": 0
+            }
+          ],
+          "attributeTypes": [
+            {
+              "id": 2439,
+              "name": "색상",
+              "dataType": "STRING",
+              "mandatory": true,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 7663,
+              "name": "총 수량",
+              "dataType": "NUMBER",
+              "mandatory": true,
+              "allowUnits": [
+                "箱",
+                "包",
+                "박스",
+                "個裝",
+                "count",
+                "팩",
+                "box",
+                "개",
+                "pack"
+              ],
+              "units": [
+                "개",
+                "박스",
+                "팩"
+              ]
+            },
+            {
+              "id": 10921,
+              "name": "평량",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [
+                "gsm",
+                "t",
+                "lb",
+                "g",
+                "mg",
+                "oz",
+                "kg"
+              ],
+              "units": [
+                "MG",
+                "G",
+                "KG",
+                "T",
+                "OZ",
+                "LB"
+              ]
+            },
+            {
+              "id": 7783,
+              "name": "사이즈",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 11680,
+              "name": "1장당 칸 수",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [
+                "대",
+                "頁",
+                "球",
+                "자리",
+                "현",
+                "包",
+                "枚入",
+                "봉",
+                "個",
+                "쌍",
+                "部分",
+                "每個",
+                "種分類",
+                "인분",
+                "정",
+                "캡슐",
+                "개",
+                "선",
+                "錠",
+                "次",
+                "인용",
+                "팩",
+                "次性",
+                "本",
+                "頭",
+                "種",
+                "支",
+                "건반",
+                "串",
+                "張",
+                "매입",
+                "박스",
+                "個裝",
+                "格",
+                "款",
+                "분류",
+                "組",
+                "幅",
+                "捆",
+                "顆",
+                "片",
+                "塊",
+                "行",
+                "罐",
+                "孔",
+                "套",
+                "음판",
+                "卡",
+                "회분",
+                "set",
+                "롤",
+                "層",
+                "入",
+                "구",
+                "副",
+                "杯",
+                "p",
+                "조",
+                "捲",
+                "色",
+                "鍵",
+                "桶",
+                "칸",
+                "입",
+                "종",
+                "頁數",
+                "번",
+                "冊",
+                "把",
+                "邊",
+                "型",
+                "袋",
+                "권",
+                "회",
+                "프렛",
+                "캔",
+                "세트",
+                "枚",
+                "條",
+                "管",
+                "장",
+                "箱",
+                "통",
+                "段",
+                "人",
+                "Ea",
+                "쪽",
+                "抽",
+                "位數",
+                "색",
+                "box",
+                "단계",
+                "병",
+                "盒",
+                "스틱",
+                "雙",
+                "回",
+                "口",
+                "매",
+                "단",
+                "포",
+                "폭",
+                "rpm",
+                "台",
+                "피스",
+                "마리",
+                "공",
+                "件",
+                "瓶",
+                "개입"
+              ],
+              "units": [
+                "PIECE",
+                "PCS",
+                "SHEET",
+                "SHEETS",
+                "PACK",
+                "BITE",
+                "PAGE",
+                "BOTTLE",
+                "PERSON",
+                "PORTION",
+                "BOX",
+                "EA",
+                "포",
+                "캔",
+                "박스",
+                "STICK_KO",
+                "BOOK",
+                "SET",
+                "SET_KOR",
+                "SET_KOR_COUNT",
+                "CAPSULE",
+                "CARTON",
+                "PILL",
+                "SACK",
+                "HEAD",
+                "ROLL",
+                "P",
+                "KU_KR",
+                "PIECES",
+                "NUMBER_OF_TIMES",
+                "NUMBER_OF_VOLUMN",
+                "NUMBER_OF_STEP",
+                "NUMBER_OF_TIMES_BUN",
+                "FRET_COUNT",
+                "PLATE_COUNT",
+                "KEY_COUNT",
+                "PAGE_COUNT",
+                "COLUMN_COUNT",
+                "CELL_COUNT",
+                "KIND_COUNT",
+                "SEP_COUNT",
+                "LINE_COUNT",
+                "LINE_COUNT_LINE",
+                "PUNCHING_COUNT",
+                "NUM_LENGTH_COUNT",
+                "FOLDING_COUNT",
+                "RPM_COUNT",
+                "COLOR_COUNT",
+                "VEHICLE_COUNT",
+                "PAIR"
+              ]
+            },
+            {
+              "id": 10396,
+              "name": "사용프린터",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 11161,
+              "name": "용지 광택 여부",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 7652,
+              "name": "수량",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [
+                "대",
+                "頁",
+                "球",
+                "자리",
+                "현",
+                "包",
+                "枚入",
+                "봉",
+                "個",
+                "쌍",
+                "部分",
+                "每個",
+                "種分類",
+                "인분",
+                "정",
+                "캡슐",
+                "개",
+                "선",
+                "錠",
+                "次",
+                "인용",
+                "팩",
+                "个",
+                "次性",
+                "本",
+                "頭",
+                "種",
+                "支",
+                "건반",
+                "串",
+                "張",
+                "매입",
+                "박스",
+                "個裝",
+                "格",
+                "款",
+                "분류",
+                "組",
+                "幅",
+                "捆",
+                "顆",
+                "片",
+                "塊",
+                "fret",
+                "行",
+                "罐",
+                "孔",
+                "套",
+                "음판",
+                "卡",
+                "회분",
+                "set",
+                "롤",
+                "層",
+                "入",
+                "구",
+                "副",
+                "杯",
+                "p",
+                "조",
+                "捲",
+                "色",
+                "鍵",
+                "桶",
+                "칸",
+                "입",
+                "종",
+                "頁數",
+                "번",
+                "冊",
+                "把",
+                "邊",
+                "型",
+                "袋",
+                "권",
+                "회",
+                "프렛",
+                "캔",
+                "세트",
+                "枚",
+                "條",
+                "管",
+                "장",
+                "箱",
+                "통",
+                "段",
+                "人",
+                "Ea",
+                "쪽",
+                "抽",
+                "品",
+                "位數",
+                "색",
+                "box",
+                "단계",
+                "병",
+                "盒",
+                "스틱",
+                "雙",
+                "回",
+                "口",
+                "매",
+                "단",
+                "포",
+                "폭",
+                "rpm",
+                "台",
+                "피스",
+                "마리",
+                "공",
+                "件",
+                "瓶",
+                "개입"
+              ],
+              "units": [
+                "PIECE",
+                "PCS",
+                "SHEET",
+                "SHEETS",
+                "PACK",
+                "BITE",
+                "PAGE",
+                "BOTTLE",
+                "PERSON",
+                "PORTION",
+                "BOX",
+                "EA",
+                "포",
+                "캔",
+                "박스",
+                "STICK_KO",
+                "BOOK",
+                "SET",
+                "SET_KOR",
+                "SET_KOR_COUNT",
+                "CAPSULE",
+                "CARTON",
+                "PILL",
+                "SACK",
+                "HEAD",
+                "ROLL",
+                "P",
+                "KU_KR",
+                "PIECES",
+                "NUMBER_OF_TIMES",
+                "NUMBER_OF_VOLUMN",
+                "NUMBER_OF_STEP",
+                "NUMBER_OF_TIMES_BUN",
+                "FRET_COUNT",
+                "PLATE_COUNT",
+                "KEY_COUNT",
+                "PAGE_COUNT",
+                "COLUMN_COUNT",
+                "CELL_COUNT",
+                "KIND_COUNT",
+                "SEP_COUNT",
+                "LINE_COUNT",
+                "LINE_COUNT_LINE",
+                "PUNCHING_COUNT",
+                "NUM_LENGTH_COUNT",
+                "FOLDING_COUNT",
+                "RPM_COUNT",
+                "COLOR_COUNT",
+                "VEHICLE_COUNT",
+                "PAIR"
+              ]
+            },
+            {
+              "id": 16411,
+              "name": "Manufacturer Part Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 16410,
+              "name": "Parent Manufacturer Part Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 16409,
+              "name": "Global Trade Item Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            }
+          ]
+        },
+        "optInputs": [
+          {
+            "idx": 10,
+            "placeholder": "옵션값 입력",
+            "value": "수량",
+            "disabled": true,
+            "cls": ""
+          },
+          {
+            "idx": 11,
+            "placeholder": "숫자만 입력",
+            "value": "1",
+            "disabled": true,
+            "cls": ""
+          }
+        ]
+      }
+    },
+    "16360123820": {
+      "label": "실사출력 시트지",
+      "data": {
+        "singleOpt": {
+          "attributeOptions": [
+            "사이즈",
+            "개당 수량",
+            "수량"
+          ],
+          "selectedUnitLabel": "",
+          "unitSelectionOptions": [],
+          "items": [
+            {
+              "_attributes": [
+                {
+                  "attributeTypeId": 7652,
+                  "attributeTypeName": "수량",
+                  "attributeValueName": "1개",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                },
+                {
+                  "attributeTypeId": 7783,
+                  "attributeTypeName": "사이즈",
+                  "attributeValueName": "주문제작맞춤",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                },
+                {
+                  "attributeTypeId": 7935,
+                  "attributeTypeName": "개당 수량",
+                  "attributeValueName": "1개입",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                }
+              ],
+              "_internalAttributes": [],
+              "_attributeMap": {
+                "수량": {
+                  "attributeTypeId": 7652,
+                  "attributeTypeName": "수량",
+                  "attributeValueName": "1개",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                },
+                "사이즈": {
+                  "attributeTypeId": 7783,
+                  "attributeTypeName": "사이즈",
+                  "attributeValueName": "주문제작맞춤",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                },
+                "개당 수량": {
+                  "attributeTypeId": 7935,
+                  "attributeTypeName": "개당 수량",
+                  "attributeValueName": "1개입",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                }
+              },
+              "_checked": false,
+              "_hidden": false,
+              "_childUpbundleItems": [],
+              "_parentItem": null,
+              "_updatingChildItems": false,
+              "itemName": "1개 주문제작맞춤 1개입",
+              "salePrice": 1000,
+              "originalPrice": 0,
+              "maximumBuyCount": 99939,
+              "outboundShippingTimeDay": 4,
+              "externalVendorSku": "",
+              "modelNo": "",
+              "isModelNoEmpty": true,
+              "barcode": "",
+              "coupangBarcode": "",
+              "sellerProductItemId": 38420631872,
+              "vendorItemId": 95973682956,
+              "originalVendorItemId": null,
+              "validType": "VALID",
+              "itemId": 29046743150,
+              "productId": 9708649887,
+              "_preMatchingRetrievalSource": null,
+              "_preMatchingSourceProductId": 9708649887,
+              "registrationType": "NORMAL",
+              "subRegistrationType": null,
+              "processType": "APPROVED",
+              "images": [
+                {
+                  "imageOrder": 0,
+                  "imageType": "REPRESENTATION",
+                  "cdnPath": "vendor_inventory/063e/c073026868fb6edaa6975aadddc0c6b3e5fb7a23dc05dc0d564b9a917173.jpg",
+                  "vendorPath": "vendor_inventory/063e/c073026868fb6edaa6975aadddc0c6b3e5fb7a23dc05dc0d564b9a917173.jpg"
+                },
+                {
+                  "imageOrder": 0,
+                  "imageType": "DETAIL",
+                  "cdnPath": "vendor_inventory/94e8/8889eee0988af0eb92e1b71d14a86a68973555d82c31a249284d2758d11a.jpg",
+                  "vendorPath": "vendor_inventory/94e8/8889eee0988af0eb92e1b71d14a86a68973555d82c31a249284d2758d11a.jpg"
+                },
+                {
+                  "imageOrder": 1,
+                  "imageType": "DETAIL",
+                  "cdnPath": "vendor_inventory/1fde/240f24e9186e97987b90dbb091dce4a5c2ec78981c8cb4ce1cd00f4953f1.jpg",
+                  "vendorPath": "vendor_inventory/1fde/240f24e9186e97987b90dbb091dce4a5c2ec78981c8cb4ce1cd00f4953f1.jpg"
+                },
+                {
+                  "imageOrder": 2,
+                  "imageType": "DETAIL",
+                  "cdnPath": "vendor_inventory/0232/f3a178b1e91954a35c131a676863dab808ec063560c8e815d48c42890650.jpg",
+                  "vendorPath": "vendor_inventory/0232/f3a178b1e91954a35c131a676863dab808ec063560c8e815d48c42890650.jpg"
+                }
+              ],
+              "offerCondition": "NEW",
+              "offerDescription": "",
+              "id": "76e2f554-a7ce-4961-b3e5-2d18e03e1a54",
+              "productOrigin": "",
+              "contents": [
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/4342/e1ac55b7c5e731e18402222c049d6ccd9f11fa42da8da2244bcde57bbff7.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/8c77/7bce2621e049164dd4b304b62120a3906489930b37925bcd8fa8b746243a.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/fddd/e61635125c4b3fd886a57933a67d175070f9fff97a14047909622a130725.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/9235/b84a6ab342ebaa305f1be13a551f614528c1de3246a1a18acad77cba55ef.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/dbdd/70d73b7e093a9848ee6d934623e8ff5b534efc07ce7507770eb70f8fef9e.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/2789/695a27bd87f58dd422cfb07b8df40f341a088fc5ab80dc9897c3c447d7e9.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/e7db/3905c4f2b71d758a7226ba93d70f18e54ddb3ea7797fe2bdf05ca8f056bb.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/5bde/ddec662a589d55d12e4ebe9c65397a4fac9a7a4db2c4e19b4a46dcebf2df.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/5ae2/3d1fa01ee26577db74eb88b9b8656a26bc703344a24cf4d72465bf8e1802.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/84b8/57c2373784ea63740768e6f8e63395a141dd6ad4f81ae2b4c0d7c9261207.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/6817/9b5a8ad63109160d6c918af5f20078773c1ff91d0608753aeafb8d7a3efc.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/64c3/35e79d6b32eba489018f9b4f2ea9dc70315be2ee56caf7fb37ab6d7db1b2.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/b043/9cad56d2751a83c84db27cef66f3c02f92d75e4b73f110db18e97382be76.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                }
+              ],
+              "skuId": null,
+              "skuInfo": null,
+              "skuChecked": false,
+              "globalInfo": null,
+              "emptyBarcodeReason": "COUPANG",
+              "autoPricingInfo": {
+                "minSalePrice": 950,
+                "maxSalePrice": 1000,
+                "active": false,
+                "enableRecommendation": false,
+                "defaultAutoPricingMinPrice": null,
+                "defaultAutoPricingMaxPrice": null
+              },
+              "sameDayShipping": {
+                "active": false,
+                "cutOffTimeHour": null,
+                "cutOffTimeMinute": null,
+                "cutOffTimeZone": null
+              },
+              "upBundlingInfo": null,
+              "progressiveDiscountInfo": null,
+              "attrViolationInfo": null,
+              "searchTags": [
+                "PVC시트지",
+                "간판시트지",
+                "광고시트지",
+                "글자시트지",
+                "대형스티커제작",
+                "매장시트지",
+                "방수시트지",
+                "시트지인쇄",
+                "시트지제작",
+                "실사시트지",
+                "실사출력",
+                "실외용시트지",
+                "윈도우시트지",
+                "유리창시트지",
+                "유포지출력",
+                "인쇄시트지",
+                "차량용시트지",
+                "켈지출력",
+                "합성지출력",
+                "홍보시트지"
+              ],
+              "contributionSource": null,
+              "originPrice": 0
+            }
+          ],
+          "attributeTypes": [
+            {
+              "id": 7783,
+              "name": "사이즈",
+              "dataType": "STRING",
+              "mandatory": true,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 7935,
+              "name": "개당 수량",
+              "dataType": "NUMBER",
+              "mandatory": true,
+              "allowUnits": [
+                "入",
+                "個裝",
+                "개입",
+                "pack"
+              ],
+              "units": [
+                "개입"
+              ]
+            },
+            {
+              "id": 7652,
+              "name": "수량",
+              "dataType": "NUMBER",
+              "mandatory": true,
+              "allowUnits": [
+                "箱",
+                "set",
+                "piece",
+                "套",
+                "박스",
+                "세트",
+                "box",
+                "個",
+                "개"
+              ],
+              "units": [
+                "개",
+                "박스",
+                "세트"
+              ]
+            },
+            {
+              "id": 11721,
+              "name": "스티커 크기",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 11073,
+              "name": "방수 가능여부",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 11037,
+              "name": "색상계열",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 16411,
+              "name": "Manufacturer Part Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 16410,
+              "name": "Parent Manufacturer Part Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 16409,
+              "name": "Global Trade Item Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            }
+          ]
+        },
+        "optInputs": [
+          {
+            "idx": 10,
+            "placeholder": "옵션값 입력",
+            "value": "주문제작맞춤",
+            "disabled": true,
+            "cls": ""
+          },
+          {
+            "idx": 11,
+            "placeholder": "숫자만 입력",
+            "value": "1",
+            "disabled": true,
+            "cls": ""
+          },
+          {
+            "idx": 12,
+            "placeholder": "숫자만 입력",
+            "value": "1",
+            "disabled": true,
+            "cls": ""
+          }
+        ]
+      }
+    },
+    "13537783108": {
+      "label": "빌지 영수증",
+      "data": {
+        "singleOpt": {
+          "attributeOptions": [
+            "개당 수량",
+            "수량"
+          ],
+          "selectedUnitLabel": "",
+          "unitSelectionOptions": [],
+          "items": [
+            {
+              "_attributes": [
+                {
+                  "attributeTypeId": 7652,
+                  "attributeTypeName": "수량",
+                  "attributeValueName": "1개",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                },
+                {
+                  "attributeTypeId": 7935,
+                  "attributeTypeName": "개당 수량",
+                  "attributeValueName": "1매",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                }
+              ],
+              "_internalAttributes": [],
+              "_attributeMap": {
+                "수량": {
+                  "attributeTypeId": 7652,
+                  "attributeTypeName": "수량",
+                  "attributeValueName": "1개",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                },
+                "개당 수량": {
+                  "attributeTypeId": 7935,
+                  "attributeTypeName": "개당 수량",
+                  "attributeValueName": "1매",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                }
+              },
+              "_checked": false,
+              "_hidden": false,
+              "_childUpbundleItems": [],
+              "_parentItem": null,
+              "_updatingChildItems": false,
+              "itemName": "1개 1매",
+              "salePrice": 1000,
+              "originalPrice": 0,
+              "maximumBuyCount": 97731,
+              "outboundShippingTimeDay": 4,
+              "externalVendorSku": "",
+              "modelNo": "",
+              "isModelNoEmpty": true,
+              "barcode": "",
+              "coupangBarcode": "",
+              "sellerProductItemId": 24235139199,
+              "vendorItemId": 83032016599,
+              "originalVendorItemId": null,
+              "validType": "VALID",
+              "itemId": 28907520329,
+              "productId": 9668656269,
+              "_preMatchingRetrievalSource": null,
+              "_preMatchingSourceProductId": 9668656269,
+              "registrationType": "NORMAL",
+              "subRegistrationType": null,
+              "processType": "APPROVED",
+              "images": [
+                {
+                  "imageOrder": 0,
+                  "imageType": "REPRESENTATION",
+                  "cdnPath": "vendor_inventory/3943/fdf28eb23b9fe2b2bea34e61b45c652c710bf297d8064cf8e9d63c5bfc5b.jpg",
+                  "vendorPath": "vendor_inventory/3943/fdf28eb23b9fe2b2bea34e61b45c652c710bf297d8064cf8e9d63c5bfc5b.jpg"
+                }
+              ],
+              "offerCondition": "NEW",
+              "offerDescription": "",
+              "id": "ecf6e302-7a90-4151-adbe-e67f0b851f4c",
+              "productOrigin": "",
+              "contents": [
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/1480/62e92b0da8f325345aa11e65bc0508a19e2ca01bbd3f9ebed5b7c8f5fcb1.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/873f/72420d9238eccf9b1a31dae444818272afc49fbfe0f614fe6caa4001e5f2.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/38ac/8f2428ec467bfd69cfc823bac70c7d9a6a4caaf18a983023c83b47b35cdb.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/99d7/31d5efcf96bc87e2f325c334d815065503a293808693d3471c912c53b7dc.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/50e9/4e2a39188877f8dd0dd27f74419646a35290776f7d5cc30a1dc70d18918c.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/04fb/82678c35a384e6ffa5e247467705076a79ab3debb4a46988a1826a48fb67.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/ea46/9b490fa8ab1d6bf8269c6aa22fcad4bc274f2c62ae20a27de5ed06a578a8.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/0d3d/75bfd063b695afdbf5642dd56dad5cc03731fbb422c1fc6466e7a42f6888.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/cc3f/35f54def851202280f4cf8d8b557ff3cd9913cfaaf49f5560d9055833b09.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/0552/ca9203eae8170ea277390a1220626472e1b40b27c9855811e13082712300.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                },
+                {
+                  "contentsType": "IMAGE_NO_SPACE",
+                  "contentDetails": [
+                    {
+                      "content": "vendor_inventory/6789/422c94dfd89d850928e0de5262f744712f482fc11fa9617cc9772f6b14e1.jpg",
+                      "detailType": "IMAGE",
+                      "altText": ""
+                    }
+                  ]
+                }
+              ],
+              "skuId": null,
+              "skuInfo": null,
+              "skuChecked": false,
+              "globalInfo": null,
+              "emptyBarcodeReason": "COUPANG",
+              "autoPricingInfo": {
+                "minSalePrice": 950,
+                "maxSalePrice": 1000,
+                "active": false,
+                "enableRecommendation": false,
+                "defaultAutoPricingMinPrice": null,
+                "defaultAutoPricingMaxPrice": null
+              },
+              "sameDayShipping": null,
+              "upBundlingInfo": null,
+              "progressiveDiscountInfo": null,
+              "attrViolationInfo": null,
+              "searchTags": [
+                "2매빌지",
+                "3매빌지",
+                "NCR지인쇄",
+                "간이영수증제작",
+                "거래명세서제작",
+                "계산서제작",
+                "납품서제작",
+                "매장주문서",
+                "복사빌지",
+                "빌지인쇄",
+                "빌지제작",
+                "서식지인쇄",
+                "식당빌지",
+                "양식지제작",
+                "영수증인쇄",
+                "영수증제작",
+                "인수증제작",
+                "입금표제작",
+                "주문서제작",
+                "청구서제작"
+              ],
+              "contributionSource": null,
+              "originPrice": 0
+            }
+          ],
+          "attributeTypes": [
+            {
+              "id": 7935,
+              "name": "개당 수량",
+              "dataType": "NUMBER",
+              "mandatory": true,
+              "allowUnits": [
+                "张",
+                "sheets",
+                "매",
+                "張"
+              ],
+              "units": [
+                "매"
+              ]
+            },
+            {
+              "id": 7652,
+              "name": "수량",
+              "dataType": "NUMBER",
+              "mandatory": true,
+              "allowUnits": [
+                "箱",
+                "set",
+                "piece",
+                "套",
+                "박스",
+                "세트",
+                "box",
+                "個",
+                "개"
+              ],
+              "units": [
+                "개",
+                "박스",
+                "세트"
+              ]
+            },
+            {
+              "id": 7783,
+              "name": "사이즈",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 14384,
+              "name": "상품 재질",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 11272,
+              "name": "용지 두께",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [
+                "mic"
+              ],
+              "units": [
+                "THREAD_THICKNESS",
+                "MIC"
+              ]
+            },
+            {
+              "id": 11161,
+              "name": "용지 광택 여부",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 10634,
+              "name": "내지매수",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [
+                "대",
+                "頁",
+                "球",
+                "자리",
+                "현",
+                "包",
+                "枚入",
+                "봉",
+                "個",
+                "쌍",
+                "部分",
+                "每個",
+                "種分類",
+                "인분",
+                "정",
+                "캡슐",
+                "개",
+                "선",
+                "錠",
+                "次",
+                "인용",
+                "팩",
+                "次性",
+                "本",
+                "頭",
+                "種",
+                "支",
+                "건반",
+                "串",
+                "張",
+                "매입",
+                "박스",
+                "個裝",
+                "格",
+                "款",
+                "분류",
+                "組",
+                "幅",
+                "捆",
+                "顆",
+                "片",
+                "塊",
+                "行",
+                "罐",
+                "孔",
+                "套",
+                "음판",
+                "卡",
+                "회분",
+                "set",
+                "롤",
+                "層",
+                "入",
+                "구",
+                "副",
+                "杯",
+                "p",
+                "조",
+                "捲",
+                "色",
+                "鍵",
+                "桶",
+                "칸",
+                "입",
+                "종",
+                "頁數",
+                "번",
+                "冊",
+                "把",
+                "邊",
+                "型",
+                "袋",
+                "권",
+                "회",
+                "프렛",
+                "캔",
+                "세트",
+                "枚",
+                "條",
+                "管",
+                "장",
+                "箱",
+                "통",
+                "段",
+                "人",
+                "Ea",
+                "쪽",
+                "抽",
+                "位數",
+                "색",
+                "box",
+                "단계",
+                "병",
+                "盒",
+                "스틱",
+                "雙",
+                "回",
+                "口",
+                "매",
+                "단",
+                "포",
+                "폭",
+                "rpm",
+                "台",
+                "피스",
+                "마리",
+                "공",
+                "件",
+                "瓶",
+                "개입"
+              ],
+              "units": [
+                "PIECE",
+                "PCS",
+                "SHEET",
+                "SHEETS",
+                "PACK",
+                "BITE",
+                "PAGE",
+                "BOTTLE",
+                "PERSON",
+                "PORTION",
+                "BOX",
+                "EA",
+                "포",
+                "캔",
+                "박스",
+                "STICK_KO",
+                "BOOK",
+                "SET",
+                "SET_KOR",
+                "SET_KOR_COUNT",
+                "CAPSULE",
+                "CARTON",
+                "PILL",
+                "SACK",
+                "HEAD",
+                "ROLL",
+                "P",
+                "KU_KR",
+                "PIECES",
+                "NUMBER_OF_TIMES",
+                "NUMBER_OF_VOLUMN",
+                "NUMBER_OF_STEP",
+                "NUMBER_OF_TIMES_BUN",
+                "FRET_COUNT",
+                "PLATE_COUNT",
+                "KEY_COUNT",
+                "PAGE_COUNT",
+                "COLUMN_COUNT",
+                "CELL_COUNT",
+                "KIND_COUNT",
+                "SEP_COUNT",
+                "LINE_COUNT",
+                "LINE_COUNT_LINE",
+                "PUNCHING_COUNT",
+                "NUM_LENGTH_COUNT",
+                "FOLDING_COUNT",
+                "RPM_COUNT",
+                "COLOR_COUNT",
+                "VEHICLE_COUNT",
+                "PAIR"
+              ]
+            },
+            {
+              "id": 16411,
+              "name": "Manufacturer Part Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 16410,
+              "name": "Parent Manufacturer Part Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 16409,
+              "name": "Global Trade Item Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            }
+          ]
+        },
+        "optInputs": [
+          {
+            "idx": 10,
+            "placeholder": "숫자만 입력",
+            "value": "1",
+            "disabled": true,
+            "cls": ""
+          },
+          {
+            "idx": 11,
+            "placeholder": "숫자만 입력",
+            "value": "1",
+            "disabled": true,
+            "cls": ""
+          }
+        ]
+      }
+    },
+    "15280825938": {
+      "label": "카다로그",
+      "data": {
+        "singleOpt": {
+          "attributeOptions": [
+            "색상",
+            "총 수량"
+          ],
+          "selectedUnitLabel": "",
+          "unitSelectionOptions": [],
+          "items": [
+            {
+              "_attributes": [
+                {
+                  "attributeTypeId": 2439,
+                  "attributeTypeName": "색상",
+                  "attributeValueName": "수량",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                },
+                {
+                  "attributeTypeId": 7663,
+                  "attributeTypeName": "총 수량",
+                  "attributeValueName": "1개",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                }
+              ],
+              "_internalAttributes": [],
+              "_attributeMap": {
+                "색상": {
+                  "attributeTypeId": 2439,
+                  "attributeTypeName": "색상",
+                  "attributeValueName": "수량",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                },
+                "총 수량": {
+                  "attributeTypeId": 7663,
+                  "attributeTypeName": "총 수량",
+                  "attributeValueName": "1개",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                }
+              },
+              "_checked": false,
+              "_hidden": false,
+              "_childUpbundleItems": [],
+              "_parentItem": null,
+              "_updatingChildItems": false,
+              "itemName": "수량 1개",
+              "salePrice": 1000,
+              "originalPrice": 1000,
+              "maximumBuyCount": 96673,
+              "outboundShippingTimeDay": 4,
+              "externalVendorSku": "",
+              "modelNo": "",
+              "isModelNoEmpty": true,
+              "barcode": "",
+              "coupangBarcode": "",
+              "sellerProductItemId": 33699673623,
+              "vendorItemId": 91556116651,
+              "originalVendorItemId": null,
+              "validType": "VALID",
+              "itemId": 24543687795,
+              "productId": 8481372763,
+              "_preMatchingRetrievalSource": null,
+              "_preMatchingSourceProductId": 8481372763,
+              "registrationType": "NORMAL",
+              "subRegistrationType": null,
+              "processType": "APPROVED",
+              "images": [
+                {
+                  "imageOrder": 0,
+                  "imageType": "REPRESENTATION",
+                  "cdnPath": "vendor_inventory/690d/2c34d9d19aa73243ec41deb6325e5d9410b726017fbe5221f964082c8d09.jpg",
+                  "vendorPath": "2c34d9d19aa73243ec41deb6325e5d9410b726017fbe5221f964082c8d09.jpg"
+                },
+                {
+                  "imageOrder": 0,
+                  "imageType": "DETAIL",
+                  "cdnPath": "vendor_inventory/690d/2c34d9d19aa73243ec41deb6325e5d9410b726017fbe5221f964082c8d09.jpg",
+                  "vendorPath": "2c34d9d19aa73243ec41deb6325e5d9410b726017fbe5221f964082c8d09.jpg"
+                }
+              ],
+              "offerCondition": "NEW",
+              "offerDescription": "",
+              "id": "7af5671f-6b1e-4bb4-b7b5-b8a1deb3a106",
+              "productOrigin": "",
+              "contents": [
+                {
+                  "contentsType": "HTML",
+                  "contentDetails": [
+                    {
+                      "content": "<p style=\"text-align: center;\"><img src=\"http://image1.coupangcdn.com/image/vendor_inventory/cdf1/12c700ba1f101e761468610682502411ab9df961d074bcf4d5529158a195.jpg\"><img src=\"http://image1.coupangcdn.com/image/vendor_inventory/c11f/3ad68fc4854c4adb43b833a5b085bc8fd73408b8e0a171ac043a9427435e.jpg\"><img src=\"http://image1.coupangcdn.com/image/vendor_inventory/117a/bef5b296e8b71f5f88b987eba244450a29fd5e569247ba6aaa3b1923e3c3.jpg\"><img src=\"http://image1.coupangcdn.com/image/vendor_inventory/ef14/2053812036918372ff03afa959d5943cfef5acf128131ab9f6a004804990.jpg\"><img src=\"http://image1.coupangcdn.com/image/vendor_inventory/f1b8/b0233af490fe38bbc2cde3bd5f880ed88b5d35978c1d37c0327a63497bea.jpg\"><img src=\"http://image1.coupangcdn.com/image/vendor_inventory/bc7e/a0c0a63c563666d31c1076a8bd75db9bb45765bd59829b7f03853ea0f03f.jpg\"></p>",
+                      "detailType": "TEXT",
+                      "altText": ""
+                    }
+                  ]
+                }
+              ],
+              "skuId": null,
+              "skuInfo": null,
+              "skuChecked": false,
+              "globalInfo": null,
+              "emptyBarcodeReason": "COUPANG",
+              "autoPricingInfo": {
+                "minSalePrice": 950,
+                "maxSalePrice": 1000,
+                "active": false,
+                "enableRecommendation": false,
+                "defaultAutoPricingMinPrice": null,
+                "defaultAutoPricingMaxPrice": null
+              },
+              "sameDayShipping": null,
+              "upBundlingInfo": null,
+              "progressiveDiscountInfo": null,
+              "attrViolationInfo": null,
+              "searchTags": [
+                "기업브로슈어",
+                "무선제본",
+                "브로슈어제작",
+                "소량책자인쇄",
+                "소책자제작",
+                "안내책자",
+                "작품집제작",
+                "제품카다로그",
+                "주누디자인",
+                "중철제본",
+                "책자소량제작",
+                "책자제작",
+                "카다로그디자인",
+                "카다로그인쇄",
+                "카다로그제작",
+                "카달로그제작",
+                "카탈로그인쇄",
+                "카탈로그제작",
+                "홍보책자",
+                "회사소개서제작"
+              ],
+              "contributionSource": null,
+              "originPrice": 1000
+            }
+          ],
+          "attributeTypes": [
+            {
+              "id": 2439,
+              "name": "색상",
+              "dataType": "STRING",
+              "mandatory": true,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 7663,
+              "name": "총 수량",
+              "dataType": "NUMBER",
+              "mandatory": true,
+              "allowUnits": [
+                "箱",
+                "包",
+                "박스",
+                "個裝",
+                "count",
+                "팩",
+                "box",
+                "개",
+                "pack"
+              ],
+              "units": [
+                "개",
+                "박스",
+                "팩"
+              ]
+            },
+            {
+              "id": 10921,
+              "name": "평량",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [
+                "gsm",
+                "t",
+                "lb",
+                "g",
+                "mg",
+                "oz",
+                "kg"
+              ],
+              "units": [
+                "MG",
+                "G",
+                "KG",
+                "T",
+                "OZ",
+                "LB"
+              ]
+            },
+            {
+              "id": 7783,
+              "name": "사이즈",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 11680,
+              "name": "1장당 칸 수",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [
+                "대",
+                "頁",
+                "球",
+                "자리",
+                "현",
+                "包",
+                "枚入",
+                "봉",
+                "個",
+                "쌍",
+                "部分",
+                "每個",
+                "種分類",
+                "인분",
+                "정",
+                "캡슐",
+                "개",
+                "선",
+                "錠",
+                "次",
+                "인용",
+                "팩",
+                "次性",
+                "本",
+                "頭",
+                "種",
+                "支",
+                "건반",
+                "串",
+                "張",
+                "매입",
+                "박스",
+                "個裝",
+                "格",
+                "款",
+                "분류",
+                "組",
+                "幅",
+                "捆",
+                "顆",
+                "片",
+                "塊",
+                "行",
+                "罐",
+                "孔",
+                "套",
+                "음판",
+                "卡",
+                "회분",
+                "set",
+                "롤",
+                "層",
+                "入",
+                "구",
+                "副",
+                "杯",
+                "p",
+                "조",
+                "捲",
+                "色",
+                "鍵",
+                "桶",
+                "칸",
+                "입",
+                "종",
+                "頁數",
+                "번",
+                "冊",
+                "把",
+                "邊",
+                "型",
+                "袋",
+                "권",
+                "회",
+                "프렛",
+                "캔",
+                "세트",
+                "枚",
+                "條",
+                "管",
+                "장",
+                "箱",
+                "통",
+                "段",
+                "人",
+                "Ea",
+                "쪽",
+                "抽",
+                "位數",
+                "색",
+                "box",
+                "단계",
+                "병",
+                "盒",
+                "스틱",
+                "雙",
+                "回",
+                "口",
+                "매",
+                "단",
+                "포",
+                "폭",
+                "rpm",
+                "台",
+                "피스",
+                "마리",
+                "공",
+                "件",
+                "瓶",
+                "개입"
+              ],
+              "units": [
+                "PIECE",
+                "PCS",
+                "SHEET",
+                "SHEETS",
+                "PACK",
+                "BITE",
+                "PAGE",
+                "BOTTLE",
+                "PERSON",
+                "PORTION",
+                "BOX",
+                "EA",
+                "포",
+                "캔",
+                "박스",
+                "STICK_KO",
+                "BOOK",
+                "SET",
+                "SET_KOR",
+                "SET_KOR_COUNT",
+                "CAPSULE",
+                "CARTON",
+                "PILL",
+                "SACK",
+                "HEAD",
+                "ROLL",
+                "P",
+                "KU_KR",
+                "PIECES",
+                "NUMBER_OF_TIMES",
+                "NUMBER_OF_VOLUMN",
+                "NUMBER_OF_STEP",
+                "NUMBER_OF_TIMES_BUN",
+                "FRET_COUNT",
+                "PLATE_COUNT",
+                "KEY_COUNT",
+                "PAGE_COUNT",
+                "COLUMN_COUNT",
+                "CELL_COUNT",
+                "KIND_COUNT",
+                "SEP_COUNT",
+                "LINE_COUNT",
+                "LINE_COUNT_LINE",
+                "PUNCHING_COUNT",
+                "NUM_LENGTH_COUNT",
+                "FOLDING_COUNT",
+                "RPM_COUNT",
+                "COLOR_COUNT",
+                "VEHICLE_COUNT",
+                "PAIR"
+              ]
+            },
+            {
+              "id": 10396,
+              "name": "사용프린터",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 11161,
+              "name": "용지 광택 여부",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 7652,
+              "name": "수량",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [
+                "대",
+                "頁",
+                "球",
+                "자리",
+                "현",
+                "包",
+                "枚入",
+                "봉",
+                "個",
+                "쌍",
+                "部分",
+                "每個",
+                "種分類",
+                "인분",
+                "정",
+                "캡슐",
+                "개",
+                "선",
+                "錠",
+                "次",
+                "인용",
+                "팩",
+                "个",
+                "次性",
+                "本",
+                "頭",
+                "種",
+                "支",
+                "건반",
+                "串",
+                "張",
+                "매입",
+                "박스",
+                "個裝",
+                "格",
+                "款",
+                "분류",
+                "組",
+                "幅",
+                "捆",
+                "顆",
+                "片",
+                "塊",
+                "fret",
+                "行",
+                "罐",
+                "孔",
+                "套",
+                "음판",
+                "卡",
+                "회분",
+                "set",
+                "롤",
+                "層",
+                "入",
+                "구",
+                "副",
+                "杯",
+                "p",
+                "조",
+                "捲",
+                "色",
+                "鍵",
+                "桶",
+                "칸",
+                "입",
+                "종",
+                "頁數",
+                "번",
+                "冊",
+                "把",
+                "邊",
+                "型",
+                "袋",
+                "권",
+                "회",
+                "프렛",
+                "캔",
+                "세트",
+                "枚",
+                "條",
+                "管",
+                "장",
+                "箱",
+                "통",
+                "段",
+                "人",
+                "Ea",
+                "쪽",
+                "抽",
+                "品",
+                "位數",
+                "색",
+                "box",
+                "단계",
+                "병",
+                "盒",
+                "스틱",
+                "雙",
+                "回",
+                "口",
+                "매",
+                "단",
+                "포",
+                "폭",
+                "rpm",
+                "台",
+                "피스",
+                "마리",
+                "공",
+                "件",
+                "瓶",
+                "개입"
+              ],
+              "units": [
+                "PIECE",
+                "PCS",
+                "SHEET",
+                "SHEETS",
+                "PACK",
+                "BITE",
+                "PAGE",
+                "BOTTLE",
+                "PERSON",
+                "PORTION",
+                "BOX",
+                "EA",
+                "포",
+                "캔",
+                "박스",
+                "STICK_KO",
+                "BOOK",
+                "SET",
+                "SET_KOR",
+                "SET_KOR_COUNT",
+                "CAPSULE",
+                "CARTON",
+                "PILL",
+                "SACK",
+                "HEAD",
+                "ROLL",
+                "P",
+                "KU_KR",
+                "PIECES",
+                "NUMBER_OF_TIMES",
+                "NUMBER_OF_VOLUMN",
+                "NUMBER_OF_STEP",
+                "NUMBER_OF_TIMES_BUN",
+                "FRET_COUNT",
+                "PLATE_COUNT",
+                "KEY_COUNT",
+                "PAGE_COUNT",
+                "COLUMN_COUNT",
+                "CELL_COUNT",
+                "KIND_COUNT",
+                "SEP_COUNT",
+                "LINE_COUNT",
+                "LINE_COUNT_LINE",
+                "PUNCHING_COUNT",
+                "NUM_LENGTH_COUNT",
+                "FOLDING_COUNT",
+                "RPM_COUNT",
+                "COLOR_COUNT",
+                "VEHICLE_COUNT",
+                "PAIR"
+              ]
+            },
+            {
+              "id": 16411,
+              "name": "Manufacturer Part Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 16410,
+              "name": "Parent Manufacturer Part Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 16409,
+              "name": "Global Trade Item Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            }
+          ]
+        },
+        "optInputs": [
+          {
+            "idx": 10,
+            "placeholder": "옵션값 입력",
+            "value": "수량",
+            "disabled": true,
+            "cls": ""
+          },
+          {
+            "idx": 11,
+            "placeholder": "숫자만 입력",
+            "value": "1",
+            "disabled": true,
+            "cls": ""
+          }
+        ]
+      }
+    },
+    "15280821833": {
+      "label": "리플렛 팜플렛",
+      "data": {
+        "singleOpt": {
+          "attributeOptions": [
+            "색상",
+            "총 수량"
+          ],
+          "selectedUnitLabel": "",
+          "unitSelectionOptions": [],
+          "items": [
+            {
+              "_attributes": [
+                {
+                  "attributeTypeId": 2439,
+                  "attributeTypeName": "색상",
+                  "attributeValueName": "수량",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                },
+                {
+                  "attributeTypeId": 7663,
+                  "attributeTypeName": "총 수량",
+                  "attributeValueName": "1개",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                }
+              ],
+              "_internalAttributes": [],
+              "_attributeMap": {
+                "색상": {
+                  "attributeTypeId": 2439,
+                  "attributeTypeName": "색상",
+                  "attributeValueName": "수량",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                },
+                "총 수량": {
+                  "attributeTypeId": 7663,
+                  "attributeTypeName": "총 수량",
+                  "attributeValueName": "1개",
+                  "exposed": "EXPOSED",
+                  "editable": true
+                }
+              },
+              "_checked": false,
+              "_hidden": false,
+              "_childUpbundleItems": [],
+              "_parentItem": null,
+              "_updatingChildItems": false,
+              "itemName": "수량 1개",
+              "salePrice": 1000,
+              "originalPrice": 1000,
+              "maximumBuyCount": 99553,
+              "outboundShippingTimeDay": 4,
+              "externalVendorSku": "",
+              "modelNo": "",
+              "isModelNoEmpty": true,
+              "barcode": "",
+              "coupangBarcode": "",
+              "sellerProductItemId": 33699655999,
+              "vendorItemId": 91556098512,
+              "originalVendorItemId": null,
+              "validType": "VALID",
+              "itemId": 24543669446,
+              "productId": 8481368291,
+              "_preMatchingRetrievalSource": null,
+              "_preMatchingSourceProductId": 8481368291,
+              "registrationType": "NORMAL",
+              "subRegistrationType": null,
+              "processType": "APPROVED",
+              "images": [
+                {
+                  "imageOrder": 0,
+                  "imageType": "REPRESENTATION",
+                  "cdnPath": "vendor_inventory/f04d/8b0bad4ab94fc06f4d1ad8037ae51128838a5faa40fd1e3a72a5483deed6.jpg",
+                  "vendorPath": "8b0bad4ab94fc06f4d1ad8037ae51128838a5faa40fd1e3a72a5483deed6.jpg"
+                }
+              ],
+              "offerCondition": "NEW",
+              "offerDescription": "",
+              "id": "939f7c30-b81c-48fb-9cd6-bb4b7e340af1",
+              "productOrigin": "",
+              "contents": [
+                {
+                  "contentsType": "HTML",
+                  "contentDetails": [
+                    {
+                      "content": "<p><img src=\"http://image1.coupangcdn.com/image/vendor_inventory/aeb6/98def6c952736205998e3078cbb259c492c9efac02b611bb850cf857cd0c.jpg\"><img src=\"http://image1.coupangcdn.com/image/vendor_inventory/600c/40b93e2823094e0c46abd0198ed956c7deb1897b63cee1d8cd25d04f099c.jpg\"><img src=\"http://image1.coupangcdn.com/image/vendor_inventory/3de4/f6c645d7c3b058656a1c56ec01cf7ae2fdf770d65a58cf6000822bef407b.jpg\"><img src=\"http://image1.coupangcdn.com/image/vendor_inventory/e479/31fecdd387a36250065faeaa483091a171a350911ad157c3c0fd10edccd8.jpg\"><img src=\"http://image1.coupangcdn.com/image/vendor_inventory/ada7/63d326b09fa85df8771b0a59792145ba7ccfac332051b128aa65a13b137a.jpg\"><img src=\"http://image1.coupangcdn.com/image/vendor_inventory/627e/2c2d1382f225750c679b7a084a64b915903b58f5fffbb743dc2b2801a6e9.jpg\"><img src=\"http://image1.coupangcdn.com/image/vendor_inventory/7ff0/88bc228852efd7d67bd0ee4ebc63abea2144dc4bf2ff9438aa4778473796.jpg\"><img src=\"http://image1.coupangcdn.com/image/vendor_inventory/5abf/32b54c33281e7d857ab16cf0981066b7edcb040e49123de492002553ac00.jpg\"><img src=\"http://image1.coupangcdn.com/image/vendor_inventory/e9a7/3e2d75810433b990adc9530ed5dd556d76c02402e3b57b16c7597071e6fe.jpg\"></p>",
+                      "detailType": "TEXT",
+                      "altText": ""
+                    }
+                  ]
+                }
+              ],
+              "skuId": null,
+              "skuInfo": null,
+              "skuChecked": false,
+              "globalInfo": null,
+              "emptyBarcodeReason": "COUPANG",
+              "autoPricingInfo": {
+                "minSalePrice": 950,
+                "maxSalePrice": 1000,
+                "active": false,
+                "enableRecommendation": false,
+                "defaultAutoPricingMinPrice": null,
+                "defaultAutoPricingMaxPrice": null
+              },
+              "sameDayShipping": null,
+              "upBundlingInfo": null,
+              "progressiveDiscountInfo": null,
+              "attrViolationInfo": null,
+              "searchTags": [
+                "2단리플렛",
+                "3단리플렛",
+                "리플렛디자인",
+                "리플렛인쇄",
+                "리플렛제작",
+                "병원리플렛",
+                "브로슈어제작",
+                "소량리플렛",
+                "안내장제작",
+                "전시회리플렛",
+                "접지인쇄물",
+                "접지전단지",
+                "주누디자인",
+                "팜플렛디자인",
+                "팜플렛인쇄",
+                "팜플렛제작",
+                "학원팜플렛",
+                "행사팜플렛",
+                "홍보물제작",
+                "회사브로슈어"
+              ],
+              "contributionSource": null,
+              "originPrice": 1000
+            }
+          ],
+          "attributeTypes": [
+            {
+              "id": 2439,
+              "name": "색상",
+              "dataType": "STRING",
+              "mandatory": true,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 7663,
+              "name": "총 수량",
+              "dataType": "NUMBER",
+              "mandatory": true,
+              "allowUnits": [
+                "箱",
+                "包",
+                "박스",
+                "個裝",
+                "count",
+                "팩",
+                "box",
+                "개",
+                "pack"
+              ],
+              "units": [
+                "개",
+                "박스",
+                "팩"
+              ]
+            },
+            {
+              "id": 10921,
+              "name": "평량",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [
+                "gsm",
+                "t",
+                "lb",
+                "g",
+                "mg",
+                "oz",
+                "kg"
+              ],
+              "units": [
+                "MG",
+                "G",
+                "KG",
+                "T",
+                "OZ",
+                "LB"
+              ]
+            },
+            {
+              "id": 7783,
+              "name": "사이즈",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 11680,
+              "name": "1장당 칸 수",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [
+                "대",
+                "頁",
+                "球",
+                "자리",
+                "현",
+                "包",
+                "枚入",
+                "봉",
+                "個",
+                "쌍",
+                "部分",
+                "每個",
+                "種分類",
+                "인분",
+                "정",
+                "캡슐",
+                "개",
+                "선",
+                "錠",
+                "次",
+                "인용",
+                "팩",
+                "次性",
+                "本",
+                "頭",
+                "種",
+                "支",
+                "건반",
+                "串",
+                "張",
+                "매입",
+                "박스",
+                "個裝",
+                "格",
+                "款",
+                "분류",
+                "組",
+                "幅",
+                "捆",
+                "顆",
+                "片",
+                "塊",
+                "行",
+                "罐",
+                "孔",
+                "套",
+                "음판",
+                "卡",
+                "회분",
+                "set",
+                "롤",
+                "層",
+                "入",
+                "구",
+                "副",
+                "杯",
+                "p",
+                "조",
+                "捲",
+                "色",
+                "鍵",
+                "桶",
+                "칸",
+                "입",
+                "종",
+                "頁數",
+                "번",
+                "冊",
+                "把",
+                "邊",
+                "型",
+                "袋",
+                "권",
+                "회",
+                "프렛",
+                "캔",
+                "세트",
+                "枚",
+                "條",
+                "管",
+                "장",
+                "箱",
+                "통",
+                "段",
+                "人",
+                "Ea",
+                "쪽",
+                "抽",
+                "位數",
+                "색",
+                "box",
+                "단계",
+                "병",
+                "盒",
+                "스틱",
+                "雙",
+                "回",
+                "口",
+                "매",
+                "단",
+                "포",
+                "폭",
+                "rpm",
+                "台",
+                "피스",
+                "마리",
+                "공",
+                "件",
+                "瓶",
+                "개입"
+              ],
+              "units": [
+                "PIECE",
+                "PCS",
+                "SHEET",
+                "SHEETS",
+                "PACK",
+                "BITE",
+                "PAGE",
+                "BOTTLE",
+                "PERSON",
+                "PORTION",
+                "BOX",
+                "EA",
+                "포",
+                "캔",
+                "박스",
+                "STICK_KO",
+                "BOOK",
+                "SET",
+                "SET_KOR",
+                "SET_KOR_COUNT",
+                "CAPSULE",
+                "CARTON",
+                "PILL",
+                "SACK",
+                "HEAD",
+                "ROLL",
+                "P",
+                "KU_KR",
+                "PIECES",
+                "NUMBER_OF_TIMES",
+                "NUMBER_OF_VOLUMN",
+                "NUMBER_OF_STEP",
+                "NUMBER_OF_TIMES_BUN",
+                "FRET_COUNT",
+                "PLATE_COUNT",
+                "KEY_COUNT",
+                "PAGE_COUNT",
+                "COLUMN_COUNT",
+                "CELL_COUNT",
+                "KIND_COUNT",
+                "SEP_COUNT",
+                "LINE_COUNT",
+                "LINE_COUNT_LINE",
+                "PUNCHING_COUNT",
+                "NUM_LENGTH_COUNT",
+                "FOLDING_COUNT",
+                "RPM_COUNT",
+                "COLOR_COUNT",
+                "VEHICLE_COUNT",
+                "PAIR"
+              ]
+            },
+            {
+              "id": 10396,
+              "name": "사용프린터",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 11161,
+              "name": "용지 광택 여부",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 7652,
+              "name": "수량",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [
+                "대",
+                "頁",
+                "球",
+                "자리",
+                "현",
+                "包",
+                "枚入",
+                "봉",
+                "個",
+                "쌍",
+                "部分",
+                "每個",
+                "種分類",
+                "인분",
+                "정",
+                "캡슐",
+                "개",
+                "선",
+                "錠",
+                "次",
+                "인용",
+                "팩",
+                "个",
+                "次性",
+                "本",
+                "頭",
+                "種",
+                "支",
+                "건반",
+                "串",
+                "張",
+                "매입",
+                "박스",
+                "個裝",
+                "格",
+                "款",
+                "분류",
+                "組",
+                "幅",
+                "捆",
+                "顆",
+                "片",
+                "塊",
+                "fret",
+                "行",
+                "罐",
+                "孔",
+                "套",
+                "음판",
+                "卡",
+                "회분",
+                "set",
+                "롤",
+                "層",
+                "入",
+                "구",
+                "副",
+                "杯",
+                "p",
+                "조",
+                "捲",
+                "色",
+                "鍵",
+                "桶",
+                "칸",
+                "입",
+                "종",
+                "頁數",
+                "번",
+                "冊",
+                "把",
+                "邊",
+                "型",
+                "袋",
+                "권",
+                "회",
+                "프렛",
+                "캔",
+                "세트",
+                "枚",
+                "條",
+                "管",
+                "장",
+                "箱",
+                "통",
+                "段",
+                "人",
+                "Ea",
+                "쪽",
+                "抽",
+                "品",
+                "位數",
+                "색",
+                "box",
+                "단계",
+                "병",
+                "盒",
+                "스틱",
+                "雙",
+                "回",
+                "口",
+                "매",
+                "단",
+                "포",
+                "폭",
+                "rpm",
+                "台",
+                "피스",
+                "마리",
+                "공",
+                "件",
+                "瓶",
+                "개입"
+              ],
+              "units": [
+                "PIECE",
+                "PCS",
+                "SHEET",
+                "SHEETS",
+                "PACK",
+                "BITE",
+                "PAGE",
+                "BOTTLE",
+                "PERSON",
+                "PORTION",
+                "BOX",
+                "EA",
+                "포",
+                "캔",
+                "박스",
+                "STICK_KO",
+                "BOOK",
+                "SET",
+                "SET_KOR",
+                "SET_KOR_COUNT",
+                "CAPSULE",
+                "CARTON",
+                "PILL",
+                "SACK",
+                "HEAD",
+                "ROLL",
+                "P",
+                "KU_KR",
+                "PIECES",
+                "NUMBER_OF_TIMES",
+                "NUMBER_OF_VOLUMN",
+                "NUMBER_OF_STEP",
+                "NUMBER_OF_TIMES_BUN",
+                "FRET_COUNT",
+                "PLATE_COUNT",
+                "KEY_COUNT",
+                "PAGE_COUNT",
+                "COLUMN_COUNT",
+                "CELL_COUNT",
+                "KIND_COUNT",
+                "SEP_COUNT",
+                "LINE_COUNT",
+                "LINE_COUNT_LINE",
+                "PUNCHING_COUNT",
+                "NUM_LENGTH_COUNT",
+                "FOLDING_COUNT",
+                "RPM_COUNT",
+                "COLOR_COUNT",
+                "VEHICLE_COUNT",
+                "PAIR"
+              ]
+            },
+            {
+              "id": 16411,
+              "name": "Manufacturer Part Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 16410,
+              "name": "Parent Manufacturer Part Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            },
+            {
+              "id": 16409,
+              "name": "Global Trade Item Number",
+              "dataType": "STRING",
+              "mandatory": false,
+              "allowUnits": [],
+              "units": []
+            }
+          ]
+        },
+        "optInputs": [
+          {
+            "idx": 10,
+            "placeholder": "옵션값 입력",
+            "value": "수량",
+            "disabled": true,
+            "cls": ""
+          },
+          {
+            "idx": 11,
+            "placeholder": "숫자만 입력",
+            "value": "1",
+            "disabled": true,
+            "cls": ""
+          }
+        ]
+      }
+    }
+  }
+}
