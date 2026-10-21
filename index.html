@@ -86,9 +86,24 @@
           <div class="card-title">📅 2026-10-20 (최적화 기준일) 대비 전·후(Before & After) 효율 변화 비교 보드</div>
           <div class="card-desc">기준일(2026-10-20) 초기 상태와 최적화 적용 후 상태를 실시간 비교합니다. (온라인 결제 매출 + 전화상담/계좌입금 매출 통합 반영)</div>
         </div>
-        <span class="badge badge-good" id="baselineStatusBadge">✅ 전 상품 10종 & 9개 광고그룹 최적화 설계 완료</span>
+        <span class="badge badge-good" id="baselineStatusBadge">✅ 전 상품 10종 & 9개 광고그룹 + 브랜드 검색방어 완료</span>
       </div>
       <div id="baselineCompareGrid" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(215px, 1fr));gap:10px;"></div>
+    </section>
+
+    <!-- 타업체 노출 0% 주누디자인 전용 스토어 & 직통 결제창 링크 복사 바 -->
+    <section class="card" id="directStoreBannerCard" style="border:1px solid rgba(16, 185, 129, 0.45);background:linear-gradient(135deg, rgba(16,185,129,0.09) 0%, rgba(59,130,246,0.07) 100%);margin-bottom:16px;padding:14px 20px;">
+      <div class="card-header" style="margin-bottom:8px;">
+        <div>
+          <div class="card-title">🛡️ 타업체 노출 0% [주누디자인 쿠팡 전용 스토어] & 상담고객 카톡/문자 직통 결제창 링크</div>
+          <div class="card-desc">일반 쿠팡 검색창 대신 아래 <strong>전용 스토어 링크</strong>나 <strong>품목별 직통 결제 링크(수량 조정 안내 포함)</strong>를 전달하면 타사 상품·스폰서 광고 노출 없이 100% 주누디자인 상품만 표시됩니다.</div>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <button class="btn btn-good btn-sm" onclick="copyMyShopLink('url')">🏪 전용 스토어 링크 복사</button>
+          <button class="btn btn-primary btn-sm" onclick="copyMyShopLink('msg')">💬 카톡 상담 안내문+스토어 복사</button>
+        </div>
+      </div>
+      <div id="directLinksQuickBar" style="display:flex;gap:6px;flex-wrap:wrap;"></div>
     </section>
 
     <!-- 6대 핵심 KPI 요약 카드 -->
