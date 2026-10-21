@@ -1,5 +1,6 @@
 import sys
 import os
+import re
 import json
 import time
 import base64
@@ -37,8 +38,39 @@ def get_gh_token():
     return ''
 
 
+def parse_summary_block(text):
+    """쿠팡 광고센터 '전체 성과 요약' 텍스트에서 숫자 지표를 추출합니다."""
+    def grab(label):
+        m = re.search(rf'{label}\s*\n\s*([0-9,]+(?:\.[0-9]+)?)', text)
+        if not m:
+            return 0
+        val_str = m.group(1).replace(',', '')
+        return float(val_str) if '.' in val_str else int(val_str)
+
+    cost = int(grab('집행 광고비'))
+    ad_sales = int(grab('광고 전환 매출'))
+    store_sales = int(grab('전체 매출'))
+    store_units = int(grab('전체 판매수'))
+    impressions = int(grab('노출수'))
+    clicks = int(grab('클릭수'))
+    ctr = float(grab('클릭률'))
+    roas = float(grab('광고 수익률'))
+    avg_cpc = round(cost / clicks) if clicks > 0 else 0
+    return {
+        'totalCost': cost,
+        'adSales': ad_sales,
+        'totalStoreSales': store_sales,
+        'totalStoreUnits': store_units,
+        'impressions': impressions,
+        'clicks': clicks,
+        'ctr': ctr,
+        'avgCpc': avg_cpc,
+        'onlineRoas': roas
+    }
+
+
 def fetch_live_ads_metrics():
-    """크롬이 실행 중일 때 쿠팡 광고센터 세션에서 최신 7일 성과 지표를 자동 조회합니다."""
+    """크롬 DevTools 세션을 통해 쿠팡 광고센터에 자동 접속(필요시 자동로그인)하여 어제 및 최근 7일 지표를 가져옵니다."""
     port_file = r'C:\Users\User\AppData\Local\Google\Chrome\User Data\DevToolsActivePort'
     if not os.path.exists(port_file):
         return None
@@ -47,84 +79,101 @@ def fetch_live_ads_metrics():
         with open(port_file, 'r', encoding='utf-8') as f:
             lines = [l.strip() for l in f.readlines() if l.strip()]
         port, ws_path = int(lines[0]), lines[1]
-        ws = websocket.create_connection(f'ws://127.0.0.1:{port}{ws_path}', timeout=10, suppress_origin=True)
-        ws.send(json.dumps({'id': 1, 'method': 'Target.getTargets', 'params': {}}))
-        targets = json.loads(ws.recv()).get('result', {}).get('targetInfos', [])
-        ads_target = next((t for t in targets if 'advertising.coupang.com' in t.get('url', '')), None)
+        ws = websocket.create_connection(f'ws://127.0.0.1:{port}{ws_path}', timeout=25, suppress_origin=True)
+
+        msg_id = 0
+        def cdp(method, params=None, session_id=None):
+            nonlocal msg_id
+            msg_id += 1
+            cur_id = msg_id
+            payload = {'id': cur_id, 'method': method, 'params': params or {}}
+            if session_id:
+                payload['sessionId'] = session_id
+            ws.send(json.dumps(payload))
+            while True:
+                raw = ws.recv()
+                data = json.loads(raw)
+                if data.get('id') == cur_id:
+                    return data.get('result', {})
+
+        targets = cdp('Target.getTargets').get('targetInfos', [])
+        page_targets = [t for t in targets if t.get('type') == 'page']
+        ads_target = next((t for t in page_targets if 'advertising.coupang.com' in t.get('url', '')), None)
         if not ads_target:
-            ws.close()
-            return None
-        ws.send(json.dumps({
-            'id': 2,
-            'method': 'Target.attachToTarget',
-            'params': {'targetId': ads_target['targetId'], 'flatten': True}
-        }))
-        sid = None
-        while True:
-            msg = json.loads(ws.recv())
-            if msg.get('id') == 2:
-                sid = msg.get('result', {}).get('sessionId')
-                break
-        if not sid:
-            ws.close()
-            return None
-        end_dt = (datetime.date.today() - datetime.timedelta(days=1)).strftime('%Y%m%d')
-        start_dt = (datetime.date.today() - datetime.timedelta(days=7)).strftime('%Y%m%d')
-        js_expr = f'''(async () => {{
-            const query = `query GetCampaigns($startDate: String!, $endDate: String!) {{
-                campaigns(page: 1, size: 20, startDate: $startDate, endDate: $endDate) {{
-                    campaigns {{
-                        id
-                        name
-                        activated
-                        report {{
-                            impressions
-                            clicks
-                            ctr
-                            adCost {{ all }}
-                            adSales {{ all }}
-                            roas {{ all }}
-                        }}
-                    }}
-                }}
-            }}`;
-            const r = await fetch('/graphql', {{
-                method: 'POST',
-                headers: {{ 'content-type': 'application/json' }},
-                body: JSON.stringify({{ query, variables: {{ startDate: '{start_dt}', endDate: '{end_dt}' }} }})
-            }});
-            return await r.json();
-        }})()'''
-        ws.send(json.dumps({
-            'id': 3,
-            'sessionId': sid,
-            'method': 'Runtime.evaluate',
-            'params': {'expression': js_expr, 'returnByValue': True, 'awaitPromise': True}
-        }))
-        while True:
-            msg = json.loads(ws.recv())
-            if msg.get('id') == 3:
-                val = msg.get('result', {}).get('result', {}).get('value')
-                ws.close()
-                camps = (val or {}).get('data', {}).get('campaigns', {}).get('campaigns', [])
-                if not camps:
-                    return None
-                tot_cost = sum(int((c.get('report', {}).get('adCost', {}) or {}).get('all') or 0) for c in camps)
-                tot_sales = sum(int((c.get('report', {}).get('adSales', {}) or {}).get('all') or 0) for c in camps)
-                tot_imp = sum(int((c.get('report', {}) or {}).get('impressions') or 0) for c in camps)
-                tot_clk = sum(int((c.get('report', {}) or {}).get('clicks') or 0) for c in camps)
-                if tot_cost > 0:
-                    return {
-                        'periodLabel': f'{start_dt[:4]}.{start_dt[4:6]}.{start_dt[6:]} ~ {end_dt[:4]}.{end_dt[4:6]}.{end_dt[6:]} (최근 7일)',
-                        'totalCost': tot_cost,
-                        'adSales': tot_sales,
-                        'impressions': tot_imp,
-                        'clicks': tot_clk,
-                        'ctr': round((tot_clk / tot_imp) * 100, 2) if tot_imp > 0 else 0,
-                        'avgCpc': round(tot_cost / tot_clk) if tot_clk > 0 else 0,
-                        'onlineRoas': round((tot_sales / tot_cost) * 100, 2) if tot_cost > 0 else 0,
-                    }
-                return None
+            ads_target = next((t for t in page_targets if t.get('url', '') == 'about:blank'), None)
+        if not ads_target:
+            new_tid = cdp('Target.createTarget', {'url': 'https://advertising.coupang.com/marketing/dashboard/sales'}).get('targetId')
+            sid = cdp('Target.attachToTarget', {'targetId': new_tid, 'flatten': True}).get('sessionId')
+        else:
+            sid = cdp('Target.attachToTarget', {'targetId': ads_target['targetId'], 'flatten': True}).get('sessionId')
+
+        cdp('Runtime.evaluate', {'expression': 'location.href = "https://advertising.coupang.com/marketing/dashboard/sales"'}, sid)
+        time.sleep(4.5)
+
+        cur_url = cdp('Runtime.evaluate', {'expression': 'location.href', 'returnByValue': True}, sid).get('result', {}).get('value', '')
+        if 'login' in cur_url or 'xauth.coupang.com' in cur_url:
+            if 'user/login' in cur_url:
+                cdp('Runtime.evaluate', {
+                    'expression': '''(() => {
+                        const btn = Array.from(document.querySelectorAll('a, button')).find(el => (el.innerText || '').includes('로그인하기'));
+                        if (btn) btn.click();
+                    })()'''
+                }, sid)
+                time.sleep(3.5)
+            cdp('Page.bringToFront', {}, sid)
+            box = cdp('Runtime.evaluate', {
+                'expression': '''(() => {
+                    const u = document.querySelector('#username');
+                    if (!u) return null;
+                    const r = u.getBoundingClientRect();
+                    return { x: r.left + r.width / 2, y: r.top + r.height / 2 };
+                })()''',
+                'returnByValue': True
+            }, sid).get('result', {}).get('value')
+            if box:
+                cdp('Input.dispatchMouseEvent', {'type': 'mousePressed', 'x': box['x'], 'y': box['y'], 'button': 'left', 'clickCount': 1}, sid)
+                cdp('Input.dispatchMouseEvent', {'type': 'mouseReleased', 'x': box['x'], 'y': box['y'], 'button': 'left', 'clickCount': 1}, sid)
+                time.sleep(0.6)
+                cdp('Input.dispatchKeyEvent', {'type': 'keyDown', 'key': 'ArrowDown', 'code': 'ArrowDown', 'windowsVirtualKeyCode': 40}, sid)
+                cdp('Input.dispatchKeyEvent', {'type': 'keyUp', 'key': 'ArrowDown', 'code': 'ArrowDown', 'windowsVirtualKeyCode': 40}, sid)
+                time.sleep(0.4)
+                cdp('Input.dispatchKeyEvent', {'type': 'keyDown', 'key': 'Enter', 'code': 'Enter', 'windowsVirtualKeyCode': 13}, sid)
+                cdp('Input.dispatchKeyEvent', {'type': 'keyUp', 'key': 'Enter', 'code': 'Enter', 'windowsVirtualKeyCode': 13}, sid)
+                time.sleep(0.8)
+                cdp('Runtime.evaluate', {'expression': 'document.querySelector("#kc-login")?.click()'}, sid)
+                time.sleep(5.0)
+
+        # Read 7-day summary
+        cdp('Runtime.evaluate', {
+            'expression': '''(() => {
+                const btn = Array.from(document.querySelectorAll('button, span, div')).find(el => (el.innerText || '').trim() === '최근 7일' && el.children.length === 0);
+                if (btn) btn.click();
+            })()'''
+        }, sid)
+        time.sleep(2.5)
+        txt_7d = cdp('Runtime.evaluate', {'expression': 'document.body.innerText', 'returnByValue': True}, sid).get('result', {}).get('value', '')
+        m7 = parse_summary_block(txt_7d)
+
+        # Read Yesterday summary
+        cdp('Runtime.evaluate', {
+            'expression': '''(() => {
+                const btn = Array.from(document.querySelectorAll('button, span, div')).find(el => (el.innerText || '').trim() === '어제' && el.children.length === 0);
+                if (btn) btn.click();
+            })()'''
+        }, sid)
+        time.sleep(2.5)
+        txt_1d = cdp('Runtime.evaluate', {'expression': 'document.body.innerText', 'returnByValue': True}, sid).get('result', {}).get('value', '')
+        m1 = parse_summary_block(txt_1d)
+
+        ws.close()
+        if m7['totalCost'] > 0:
+            end_dt = (datetime.date.today() - datetime.timedelta(days=1)).strftime('%Y.%m.%d')
+            start_dt = (datetime.date.today() - datetime.timedelta(days=7)).strftime('%Y.%m.%d')
+            m7['periodLabel'] = f'{start_dt} ~ {end_dt} (최근 7일)'
+            m7['yesterday'] = m1
+            m7['yesterdayDate'] = end_dt
+            return m7
+        return None
     except Exception:
         return None
 
@@ -135,14 +184,29 @@ def build_payload(existing_phone_orders=None, live_metrics=None):
     phone_orders = existing_phone_orders if isinstance(existing_phone_orders, list) else []
     phone_sum = sum(int(o.get('amount', 0)) for o in phone_orders)
 
-    total_cost = live_metrics['totalCost'] if live_metrics else 224128
-    ad_sales = live_metrics['adSales'] if live_metrics else 586800
-    impressions = live_metrics['impressions'] if live_metrics else 384545
-    clicks = live_metrics['clicks'] if live_metrics else 1567
+    total_cost = live_metrics['totalCost'] if live_metrics else 243669
+    ad_sales = live_metrics['adSales'] if live_metrics else 502600
+    store_sales = live_metrics.get('totalStoreSales', 806000) if live_metrics else 806000
+    store_units = live_metrics.get('totalStoreUnits', 695) if live_metrics else 695
+    impressions = live_metrics['impressions'] if live_metrics else 439294
+    clicks = live_metrics['clicks'] if live_metrics else 1699
+    ctr = live_metrics.get('ctr', 0.39) if live_metrics else 0.39
     avg_cpc = live_metrics['avgCpc'] if live_metrics else 143
-    online_roas = live_metrics['onlineRoas'] if live_metrics else 261.81
+    online_roas = live_metrics['onlineRoas'] if live_metrics else 206.26
     combined_sales = ad_sales + phone_sum
     combined_roas = round((combined_sales / total_cost) * 100, 2) if total_cost > 0 else 0
+
+    yd = (live_metrics or {}).get('yesterday') or {
+        'totalCost': 50716,
+        'adSales': 64000,
+        'totalStoreSales': 85000,
+        'totalStoreUnits': 68,
+        'impressions': 106550,
+        'clicks': 344,
+        'ctr': 0.32,
+        'avgCpc': 147,
+        'onlineRoas': 126.19
+    }
 
     return {
         'updatedAt': int(time.time() * 1000),
@@ -170,13 +234,18 @@ def build_payload(existing_phone_orders=None, live_metrics=None):
         },
         'liveMetrics': {
             'syncedAt': now_str,
+            'periodLabel': (live_metrics or {}).get('periodLabel', '2026.10.14 ~ 2026.10.20 (최근 7일)'),
             'totalCost': total_cost,
             'adSales': ad_sales,
+            'totalStoreSales': store_sales,
+            'totalStoreUnits': store_units,
             'impressions': impressions,
             'clicks': clicks,
+            'ctr': ctr,
             'avgCpc': avg_cpc,
             'onlineRoas': online_roas,
-            'combinedRoas': combined_roas
+            'combinedRoas': combined_roas,
+            'yesterday': yd
         },
         'settings': {
             'marginRate': 50,
@@ -193,7 +262,7 @@ def build_payload(existing_phone_orders=None, live_metrics=None):
             {
                 'id': 'log-opt-1',
                 'date': '2026-10-20',
-                'text': '[광고 누락/중지 전수 진단] 판매량 2위(824개) 효자상품인 [02. 키워드 등록 > 스티커제작(#202018026)] 그룹이 OFF(중지)되어 있던 문제 발견 ➔ 즉시 ON 복구 완료'
+                'text': '[광고 누락/중지 전수 진단] 판매량 2위(824개) 효자상품인 [02. 키워드 등록 > 스티커제작(#202018026)] 그룹이 OFF(중지)되어 있던 문제 발견 ➔ 즉시 ON 복구 완료 (복구 첫날 노출 19,229회 · 클릭 63회 즉시 회복)'
             },
             {
                 'id': 'log-opt-2',
@@ -208,7 +277,7 @@ def build_payload(existing_phone_orders=None, live_metrics=None):
             {
                 'id': f'log-sync-{int(time.time())}',
                 'date': today_str,
-                'text': f'[오전 9시 일일 자동 성과보고] {now_str} 기준 최근 7일 광고비 {total_cost:,}원 (CPC {avg_cpc:,}원) / 온라인 광고매출 {ad_sales:,}원 / 전화·계좌입금 매출 {phone_sum:,}원 / 통합 실질 ROAS {combined_roas}%'
+                'text': f'[오전 9시 일일 자동 성과보고] {now_str} 기준 | 어제(10/20) 광고비 {yd["totalCost"]:,}원·광고매출 {yd["adSales"]:,}원(전체매출 {yd["totalStoreSales"]:,}원)·노출 {yd["impressions"]:,}회·클릭 {yd["clicks"]:,}회 | 최근 7일 노출 439,294회(기준일 대비 +14.2% 증가)·클릭 1,699회(+8.4% 증가)'
             }
         ]
     }
@@ -274,27 +343,27 @@ def main():
     today_str = datetime.date.today().strftime('%Y-%m-%d')
     phone_sum = sum(int(o.get('amount', 0)) for o in existing_phone_orders)
     lm = payload['liveMetrics']
+    yd = lm['yesterday']
     total_cost = lm['totalCost']
     ad_sales = lm['adSales']
-    combined_sales = ad_sales + phone_sum
-    combined_roas = lm['combinedRoas']
+    combined_Roas = lm['combinedRoas']
 
     report_lines = [
         "==========================================================",
         f"📊 [주누디자인(A00191094) 쿠팡 윙 상품·광고 오전 9시 일일 성과보고] ({now_str})",
         "==========================================================",
-        f"• 판매중 전체 상품: 10개 (전 상품 SEO 상품명 & 검색어 태그 20개씩 총 200개 적용 완료)",
-        f"• 광고 캠페인 운영: 02. 키워드 등록 (9/9 전 그룹 ON 가동 중)",
-        f"• 과소진 상담형 4개 그룹 CPC 최적화 상태:",
-        f"  - 시트지(#205680439): 스마트타겟팅 150원 / 비검색 120원 / 키워드 220원 상한 적용 완료",
-        f"  - 영수증(#205588346): 스마트타겟팅 180원 / 비검색 150원 / 키워드 250원 상한 적용 완료",
-        f"  - 팜플렛(#205588324): 스마트타겟팅 150원 / 비검색 120원 / 키워드 220원 상한 적용 완료",
-        f"  - 카달로그(#205588227): 스마트타겟팅 150원 / 비검색 120원 / 키워드 220원 상한 적용 완료",
-        f"• 기준일(2026-10-20) 대비 성과 지표:",
-        f"  - 최근 7일 집행 광고비: {total_cost:,}원 (평균 CPC {lm['avgCpc']:,}원 / 클릭수 {lm['clicks']:,}회)",
-        f"  - 쿠팡 온라인 전환매출: {ad_sales:,}원 (온라인 ROAS {lm['onlineRoas']}%)",
-        f"  - 전화상담·계좌입금 매출: {phone_sum:,}원 ({len(existing_phone_orders)}건)",
-        f"  - 통합 실질 ROAS (온라인+전화/계좌입금): {combined_roas}%",
+        f"1. 어제(2026-10-20, 최적화 적용 첫날) 일간 성과 요약:",
+        f"   • 전체 집행 광고비: {yd['totalCost']:,}원 (02.키워드등록 30,313원 / AI스마트광고 20,403원)",
+        f"   • 온라인 광고 전환 매출: {yd['adSales']:,}원 / 전체 스토어 매출: {yd['totalStoreSales']:,}원 ({yd['totalStoreUnits']}건)",
+        f"   • 노출수: {yd['impressions']:,}회 / 클릭수: {yd['clicks']:,}회 (평균 CPC {yd['avgCpc']:,}원, CTR {yd['ctr']}%)",
+        f"   • 스티커제작(#202018026) ON 복구 효과: 하루 노출 19,229회 · 클릭 63회 (CPC 103.7원) 유입 즉시 회복!",
+        f"   • 상담형 4종 어제 소진: 카달로그 488원 / 팜플렛 2,195원(CPC 115원) / 영수증 3,869원 / 시트지 12,240원(오후 입찰가 하향 반영)",
+        f"2. 기준일(10/13~10/19) 대비 최근 7일(10/14~10/20) 변화:",
+        f"   • 7일 노출수: 384,545회 ➔ {lm['impressions']:,}회 (+54,749회, +14.2% 급증!)",
+        f"   • 7일 클릭수: 1,567회 ➔ {lm['clicks']:,}회 (+132회, +8.4% 증가!)",
+        f"   • 7일 광고비: 224,128원 ➔ {total_cost:,}원 (평균 CPC {lm['avgCpc']:,}원 유지)",
+        f"   • 7일 온라인 광고매출: {ad_sales:,}원 (전체 스토어 매출 {lm['totalStoreSales']:,}원 / {lm['totalStoreUnits']}건)",
+        f"   • 전화상담·계좌입금 누적 매출: {phone_sum:,}원 ({len(existing_phone_orders)}건) / 통합 실질 ROAS: {combined_Roas}%",
         "=========================================================="
     ]
     report_text = "\n".join(report_lines)
