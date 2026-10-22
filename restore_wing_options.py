@@ -94,21 +94,23 @@ def restore_ads_center_pure_api():
         'Referer': 'https://advertising.coupang.com/marketing/dashboard/sales'
     }
 
-    # 1. 캠페인 일예산 30,000원 복원
-    req_b = urllib.request.Request(
-        'https://advertising.coupang.com/marketing/tetris-api/campaign/budget',
-        data=json.dumps({'campaign': {'id': '101858396', 'budget': 30000}}).encode('utf-8'),
-        headers=json_headers,
-        method='POST'
-    )
-    with opener.open(req_b, timeout=20) as resp:
-        print("Budget restored:", resp.status)
+    # 1. 캠페인 일예산 복원 (02. 키워드 등록: 40,000원 / AI스마트광고: 35,000원)
+    for cid, b_val in [('101858396', 40000), ('102834348', 35000)]:
+        req_b = urllib.request.Request(
+            'https://advertising.coupang.com/marketing/tetris-api/campaign/budget',
+            data=json.dumps({'campaign': {'id': cid, 'budget': b_val}}).encode('utf-8'),
+            headers=json_headers,
+            method='POST'
+        )
+        with opener.open(req_b, timeout=20) as resp:
+            print(f"Budget restored ({cid} -> {b_val}):", resp.status)
 
     # 2. 광고그룹별 설정 및 수동 키워드 입찰가 복원
     restore_configs = [
-        ('202018126', '명함', 'manual', None, 100, 210, {'명함제작': 280}),
-        ('202018026', '스티커제작', 'manual', None, 100, 210, {'스티커제작': 280}),
-        ('202018163', '리뷰', 'manual', None, 100, 310, {}),
+        ('202018126', '명함', 'automatic', 250, 150, 280, {'명함': 650, '명함제작': 650, '명함인쇄': 550, '고급명함': 550, '금박명함': 550, '소량명함': 550, '디자인명함': 500, '도장쿠폰': 450}),
+        ('202018026', '스티커제작', 'automatic', 250, 150, 280, {'스티커제작': 650, '소량스티커': 600, '스티커': 550, '스티커인쇄': 550, '스티커주문제작': 550, '도무송스티커': 500, '투명스티커': 500}),
+        ('202018163', '리뷰', 'automatic', 180, 120, 320, {'리뷰스티커': 1320, '배달리뷰': 800, '서비스스티커': 800, '배달스티커': 750}),
+        ('202018160', '전단지', 'automatic', 160, 120, 240, {'전단지': 350, '전단지제작': 350, '전단지인쇄': 350, 'a4전단지': 330, '종이자석': 330}),
         ('205588346', '영수증', 'automatic', 180, 150, 250, {}),
         ('205680439', '시트지', 'automatic', 150, 120, 220, {}),
         ('205588324', '팜플렛', 'automatic', 150, 120, 220, {}),
